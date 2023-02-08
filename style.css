@@ -3160,6 +3160,7 @@ textarea {
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
+  
 }
 .isotope,
 .isotope .isotope-item {
@@ -4637,6 +4638,11 @@ form .form-row label.checkbox {
     margin-top: 20px;
   }
 }
+
+.ection-about,
+  .about-box {
+    margin-top: 40px;
+  }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .projects-grid .project-item {
     width: 33.33333333%;
