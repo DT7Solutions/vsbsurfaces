@@ -4863,7 +4863,7 @@ form .form-row label.checkbox {
     text-decoration: none;
     outline: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -4874,6 +4874,9 @@ form .form-row label.checkbox {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+.header-social-icons .fa{
+  font-size: 18px;
 }
 .header-social-icons a:hover {
   background-color: #E16B3D;
