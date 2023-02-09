@@ -1,8 +1,8 @@
-/* default color: #25B9F9 */
+/* default color: #459CD6 */
 body, header.site-header, .site-header-1 .stuck, header.site-header-3 .stuck, 
 	nav.site-mobile-menu > ul, .cart-button .top_cart_list_product,
 	.pricing-item, .tabs > header > h4.active, nav.site-desktop-menu > ul > li > ul,
-	nav.site-desktop-menu > ul > li ul ul {border-top-color: #25B9F9;}
+	nav.site-desktop-menu > ul > li ul ul {border-top-color: #459CD6;}
 
 	.header-buttons .cart-button .mini-cart-counter, nav.site-mobile-menu > ul > li a:hover,
 	#myModal .close, .compact-menu-canvas nav ul li a:hover, #btn-close-canvasmenu,
@@ -14,7 +14,7 @@ body, header.site-header, .site-header-1 .stuck, header.site-header-3 .stuck,
 	.tabs.tabs-2 > header > h4.active::before, .tabs.tabs-3 > header > h4.active,
 	.tabs.tabs-4 > header > h4.active, .newsletter form input[type="submit"],
 	#to-the-top:hover, nav.site-mobile-menu > ul > li a:hover, nav.site-desktop-menu > ul > li > ul a:hover,
-	a.btn-slider, .sep-background-mask {background-color: #25B9F9;}
+	a.btn-slider, .sep-background-mask {background-color: #459CD6;}
 
 	.header-buttons a:hover .fa, .cart_list.product_list_widget .product-detail a:hover,
 	.navright-button .isLeft i.fa-bars, .site-header-2 .search-bar .search-submit:hover,
@@ -30,15 +30,15 @@ body, header.site-header, .site-header-1 .stuck, header.site-header-3 .stuck,
 	.comment-reply-link:focus, .main-sidebar .widget ul li a:hover, .widget .search-form .search-submit:hover,
 	.testi-boxes blockquote:before, .pricing-table-2 .plan-price, .team-box .team-inner ul li a:hover,
 	#filter li .current, #filter li a:hover, footer .main-footer .widget-inner ul li a:hover,
-	nav.site-desktop-menu > ul > li > a:hover, .project-details .folio-buttons i {color: #25B9F9;}
+	nav.site-desktop-menu > ul > li > a:hover, .project-details .folio-buttons i {color: #459CD6;}
 
 	.site-header .btn-mobile-menu:hover i,
 	.site-header .btn-mobile-menu.clicked i,
 	.social-share a:hover, .owl-theme .owl-controls.clickable .owl-buttons div:hover,
 	.compact-buttons div:hover, .tagcloud a:hover, .smk_accordion .accordion_in .acc_head:hover,
 	.smk_accordion .accordion_in.acc_active > .acc_head, footer.footer-2 .social-icons-2 a:hover {
-		background-color: #25B9F9;
-		border-color: #25B9F9;
+		background-color: #459CD6;
+		border-color: #459CD6;
 	}
 	.site-header-2 .search-bar .search-box input[type="search"]:focus,
 	.site-header-2 .search-bar .search-box input[type="search"]:active, 
@@ -47,10 +47,10 @@ body, header.site-header, .site-header-1 .stuck, header.site-header-3 .stuck,
 	.wpcf7-form input[type=email]:focus,
 	.wpcf7-form input[type=password]:focus,
 	.wpcf7-form textarea:focus, .newsletter form input[type="email"]:focus {
-		border-color: #25B9F9;
+		border-color: #459CD6;
 	}
-	blockquote{border-left-color: #25B9F9;}
-	.tabs.tabs-4 > header{border-bottom-color: #25B9F9;}
+	blockquote{border-left-color: #459CD6;}
+	.tabs.tabs-4 > header{border-bottom-color: #459CD6;}
 .team-box .team-inner .mask,
 .social-icons a:hover, .box-intro-video .btn-intro-video:hover {
   background: rgba(41, 182, 246, 0.8);
