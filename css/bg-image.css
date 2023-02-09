@@ -8,7 +8,8 @@ section, #subheader{
 	position: relative;
 }
 section > .container{position: relative;z-index: 2;}
-#subheader {background:url(../images/bg/bg-1.jpg) top fixed;}
+#subheader {background:url(../images/blogs/vsbsurfaces-blogpage-topbanner-1899x563.png) top fixed;}
+#subheadertwo {background:url(../images/contact/vsbsurfaces-contactpage-topbanner-1899x563.png) top fixed;}
 #section-cta {background:url(../images/bg/bg-team.jpg) top fixed;}
 #section-pricing {background:url(../images/bg/bg-1.jpg) top scroll;}
 #about-intro {background:url(../images/bg/bg-about.jpg);}

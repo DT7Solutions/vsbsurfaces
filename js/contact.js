@@ -3,12 +3,12 @@
     //set your google maps parameters
 
     $(document).ready(function(){
-        var latitude = -37.817,
-            longitude = 144.962,
-            map_zoom = 14;
+        var latitude = 15.663393,
+            longitude =80.018016,
+            map_zoom = 10;
 
         var locations = [
-            ['<div class="infobox"><span>WE ARE COMPACT<span></div>', latitude, longitude, 2]
+            ['<div class="infobox"><span>Venkata sri balaji exports <span></div>', latitude, longitude, 2]
         ];
     
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
