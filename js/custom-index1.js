@@ -4,10 +4,12 @@
     // owlCarousel
     // --------------------------------------------------
 
-    /* latest-projects-items */
+    /* matural stones-items */
     $("#latest-projects-items").owlCarousel({
         items: 3,
         itemsCustom : false,
+        loop: true,
+        autoPlay : true,
         itemsDesktop : [1199, 3],
         itemsDesktopSmall : [979, 2],
         itemsTablet : [768, 2],
@@ -19,7 +21,36 @@
           "<i class='fa fa-angle-left'></i>",
           "<i class='fa fa-angle-right'></i>"
         ],
+        slideSpeed : 200,
     });
+
+      /* engineered stones-items2 */
+      $("#latest-projects-items2").owlCarousel({
+        rtl:false,
+        items: 3,
+        itemsCustom : false,
+        loop: true,
+        autoPlay : true,
+        itemsDesktop : [1199, 3],
+        itemsDesktopSmall : [979, 2],
+        itemsTablet : [768, 2],
+        itemsTabletSmall : false,
+        itemsMobile : [479, 1],
+        navigation: true,
+        pagination: false,
+        navigationText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+        ],
+        slideSpeed : 400,
+        
+        
+    });
+
+
+    
+
+
 
     /* latest-news-items */
     $(".latest-news-items").owlCarousel({
@@ -27,7 +58,7 @@
         singleItem:true,    
         navigation : false,
         pagination : false,
-        autoPlay : false,
+        autoPlay : true,
         navigationText: [
           "<i class='fa fa-angle-left'></i>",
           "<i class='fa fa-angle-right'></i>"
