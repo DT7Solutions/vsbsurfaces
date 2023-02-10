@@ -4905,3 +4905,7 @@ form .form-row label.checkbox {
   display: flex !important;
   justify-content: space-between !important;
 }
+.font-big{
+  font-size: small;
+  font-weight: 500;
+}
