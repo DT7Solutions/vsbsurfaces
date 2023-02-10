@@ -4860,7 +4860,21 @@ form .form-row label.checkbox {
     height: 65vh;
   }
 }
+/* @media only screen and (min-width: 320px) and (max-width: 992px) {
+  .latest-projects-wrapper{
+    order:2;
 
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .latest-projects-intro{
+    order:1;
+
+  }
+
+} */
 
 .header-social-icons a {
   display: inline-block;
