@@ -103,10 +103,10 @@
         <div class="gray-line"></div>
 
         <!-- Modal Search begin -->
-        <div id="myModal" class="modal fade" role="dialog">
+        <!-- <div id="myModal" class="modal fade" role="dialog">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="modal-dialog myModal-search">
-            <!-- Modal content-->
+           
             <div class="modal-content">                                        
                 <div class="modal-body">
                     <form role="search" method="get" class="search-form" action="">
@@ -116,7 +116,7 @@
                 </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Modal Search close -->
 
         
@@ -730,6 +730,60 @@
             </section>
             
         <!-- content close -->
+
+        <!-- pop up code begin -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabelfive" aria-hidden="true" data-wow-delay="0.6s">
+            <div class="modal-dialog">
+              <div class="modal-header">
+               
+             
+                  <div  style="display:flex;justify-content: center;">
+                  
+                    <img src="images/home/trail.png" alt="" class="img-responsive" >
+                    <button type="button" class="close" id="leftcenter"  data-dismiss="modal" aria-label="Close"  >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  
+                  </div>
+                 
+              </div>
+               
+               
+              </div>
+            </div>
+            <!-- <div id="myModal" class="modal fade" role="dialog">
+                <button type="button" class="close" data-dismiss="modal"  >&times;</button> 
+                <div class="modal-dialog myModal-search">
+                
+                  <div class="modal-content"> 
+                                                         
+                      <div class="modal-body">
+                        
+                          <img src="images/home/vsb-popup.png" alt=""  class="img-responsive" >
+                         
+                      </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              
+              </button>
+              
+             
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/home/trail.png"  >
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- popupcode close -->
        
         <!-- footer begin -->
         <footer class="footer-1 bg-color-1">
@@ -845,6 +899,21 @@
 
 
     <script src="switcher/demo.js"></script>
+    <script type="text/javascript">
+        const downEl = document.querySelector('close')
+        window.onload = function(){ 
+          setTimeout(function(){
+            $('#myModal').modal('show');
+          },2000);
+        
+          downEl.addEventLisener('Click', () => {
+        
+        $('#myModal').modal('none')
+        })
+         
+        }
+                        
+        </script>
    
 
 </body>

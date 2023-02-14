@@ -501,7 +501,7 @@ nav.site-mobile-menu li > ul {
   overflow: hidden;
 }
 .modal {
-  background: rgba(4, 36, 51, 0.9);
+  /* background: rgba(4, 36, 51, 0.9); */
   z-index: 500000;
   overflow: hidden;
 }
@@ -4908,4 +4908,12 @@ form .form-row label.checkbox {
 .font-big{
   font-size: small;
   font-weight: 500;
+}
+.modal-header{
+  border-bottom: 0px !important;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+#leftcenter{
+ left: 76%;
+}
 }
