@@ -298,47 +298,7 @@
                     </div>
                 </div>
             </section>
-             <form>
-               
-                <div class="icon">
-                 <div class="sign"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-                </div>
-
-              <div class="input-control">
-                <label for="">Name</label><br>
-                <input type="text" placeholder="Enter Your Name" id="Name">
-              </div>
-              <!-- input control End -->
-               
-
-              <div class="input-control">
-                <label for="">Email</label><br>
-                <input type="text" placeholder="Enter Your Email" id="Email">
-              </div>
-              <!-- input control End -->
-
-              <div class="input-control">
-                <label for="">Contact-Number</label><br>
-                <input type="text" placeholder="Enter Your Contact Number" id="Contact">
-              </div>
-              <!-- input control End -->
-
-
-              <div class="input-control">
-                <label for="">Subject</label><br>
-                <input type="text" placeholder="Enter Your Subject" id="Subject">
-              </div>
-              <!-- input control End -->
-             
-              <div class="input-control">
-                <label for="">Message</label><br>
-                <textarea name="" id="message"  rows="6" placeholder="Enter Your Message"></textarea>
-              </div>
-
-               <div class="input-control">
-                <button type="button" onclick="Mail()"  >submit</button>
-               </div>
-            </form>            
+                
 
             <!-- section gmap begin -->
             <section id="section-contact" class="no-padding" >                
@@ -471,30 +431,6 @@
     <!-- <script src="switcher/demo.js"></script>
     
        -->
-       <script src="https://smtpjs.com/v3/smtp.js">
-      </script>
-      <script>
-        
-        
-        function Mail(){
-        let name = document.getElementById("Name").value;
-        let email = document.getElementById("Email").value;
-        let Contact = document.getElementById("Contact").value;
-        let subject = document.getElementById("Subject").value;
-        let message = document.getElementById("message").value;
-          Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "manideep723@gmail.com",
-        Password :"E9E1B999970857A9B3DF5630D8D86DA6DEE0",
-        To : 'manideepsomesettyd@gmail.com',
-        From : "manideep723@gmail.com",
-        Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> For email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
-        + message
-    }).then(
-      message => alert(message)
-    );
-        }
-      </script> 
+       
 </body>
 </html>
