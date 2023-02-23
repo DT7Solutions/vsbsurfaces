@@ -50,6 +50,7 @@ a,
 a:focus,
 a:active {
   outline: none;
+  font-family: "Magdelin Alt Regular";
 }
 h1,
 h2,
@@ -130,6 +131,7 @@ nav.site-desktop-menu > ul > li > a {
   color: #555555;
   -webkit-transition: .5s;
   transition: .5s;
+  font-family: "Magdelin Alt regular" !important;
 }
 nav.site-desktop-menu > ul > li > a:hover {
   color: #28b7f9;
@@ -180,6 +182,7 @@ nav.site-desktop-menu > ul > li > ul a:hover {
 }
 nav.site-desktop-menu > ul li {
   position: relative;
+  font-family: "Magdelin Alt regular" !important;
 }
 nav.site-desktop-menu > ul > li ul ul {
   width: 260px;
@@ -205,6 +208,7 @@ nav.site-desktop-menu > ul > li ul ul {
 }
 .site-header-1 .stuck nav.site-desktop-menu > ul > li > a {
   line-height: 80px;
+  font-family: "Magdelin Alt regular" !important;
 }
 .site-header-1 .stuck .header-buttons {
   margin-top: 28px;
@@ -1029,9 +1033,9 @@ ELEMENTS
   font-size: 28px;
 }
 .about-box p {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Magdelin Alt Regular";
-  color: #2C2B2B;
+  /* color: #2C2B2B; */
 }
 
 /* #about-img {
@@ -4845,20 +4849,25 @@ form .form-row label.checkbox {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 992px) {
+@media only screen and (min-width: 320px) and (max-width: 580px) {
   .blog-grid{
-    height: 85vh;
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 581px) and (max-width: 1023px) {
+  .blog-grid{
+    height: 40vh;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1300px) {
   .blog-grid{
-    height: 85vh;
+    height: 65vh;
   }
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
   .blog-grid{
-    height: 65vh;
+    height: 50vh;
   }
 }
 /* @media only screen and (min-width: 320px) and (max-width: 992px) {
@@ -4923,3 +4932,20 @@ form .form-row label.checkbox {
 nav.site-desktop-menu > ul > li > a.active{
   color: #E16B3D!important;
 }
+
+.home-blog .card{
+  border: none; 
+}
+.home-blog .card .card-title {
+  font-family: "Magdelin Alt Regular";
+  text-transform: capitalize;
+  color: rgb(56, 55, 55);
+  font-size: 18px;
+}
+
+.home-blog .card p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+} 

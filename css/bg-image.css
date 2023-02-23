@@ -4,7 +4,7 @@ section, #subheader{
 	-webkit-background-size: 100% !important;
 	-moz-background-size: 100% !important;
 	-o-background-size: 100% !important;
-	background-size: 100% !important;
+	/* background-size: 100% !important; */
 	position: relative;
 }
 section > .container{position: relative;z-index: 2;}
