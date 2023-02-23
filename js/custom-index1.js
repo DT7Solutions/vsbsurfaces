@@ -4,7 +4,7 @@
     // owlCarousel
     // --------------------------------------------------
 
-    /* matural stones-items */
+    /* natural stones-items */
     $("#latest-projects-items").owlCarousel({
         items: 3,
         itemsCustom : false,
