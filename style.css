@@ -4960,3 +4960,6 @@ nav.site-desktop-menu > ul > li > a.active{
 .testi-boxes{
   font-family: Magdelin Alt Regular;
 }
+.equal{
+  text-align: justify!important;
+}
