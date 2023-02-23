@@ -2294,8 +2294,8 @@ textarea {
 }
 /* Testimonials */
 .testi-boxes blockquote {
-  font-family: 'Droid Serif', serif;
-  font-style: italic;
+  font-family: 'Magdelin Alt Bold';
+  /* font-style: italic; */
   font-size: 13px;
   line-height: 22px;
   color: #666666;
