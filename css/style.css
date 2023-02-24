@@ -32,7 +32,7 @@
 BODY
 ------------------------------ */
 body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Magdelin Alt regular" !important;
   font-size: 13px;
   line-height: 22px;
   margin: 0;
@@ -58,7 +58,7 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
   color: #333333;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Magdelin Alt regular" !important;
   margin-top: 0px;
 }
 /*------------------------------ 
