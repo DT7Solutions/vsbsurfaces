@@ -4963,3 +4963,18 @@ nav.site-desktop-menu > ul > li > a.active{
 .equal{
   text-align: justify!important;
 }
+.post-entry p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.post-entry h5{
+  float: left;
+}
+
+.sub-headin-p{
+  text-align: justify!important;
+  font-weight: 600;
+}
+
