@@ -67,6 +67,9 @@ h6 {
 span{
   font-family: "Magdelin Alt Regular";
 }
+p{
+  font-size: 18px !important;
+}
 /*------------------------------ 
 HEADER
 ------------------------------ */
