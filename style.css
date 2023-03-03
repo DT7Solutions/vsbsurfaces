@@ -4928,9 +4928,15 @@ form .form-row label.checkbox {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
 #leftcenter{
- left: 76%;
+ left: 90%;
 }
 }
+/* @media only screen and (min-width: 300px) and (max-width: 1500px) {
+  #rightcenter{
+   left: 92%;
+   
+  }
+  } */
 
 
 nav.site-desktop-menu > ul > li > a.active{
