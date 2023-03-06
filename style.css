@@ -4744,7 +4744,7 @@ form .form-row label.checkbox {
     font-size: 14.5px;
   }
   h5 {
-    font-size: 13px;
+    font-size: 15px;
   }
   h6 {
     font-size: 11px;
@@ -4992,4 +4992,10 @@ nav.site-desktop-menu > ul > li > a.active{
   text-transform: capitalize;
 }
 
+.post-title h5 {
+  font-size: 17px;
+}
 
+.latest-projects-intro h2 {
+  font-size: 23px;
+}
