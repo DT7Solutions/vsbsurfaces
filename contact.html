@@ -165,10 +165,10 @@
                             <form name="contactform" method="post"   class="wpcf7-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p><input type="text" id="firstname" required="" placeholder="First Name"></p>
+                                        <p><input type="text" id="firstname"   name="firstname" required="" placeholder="First Name"></p>
                                     </div>
                                     <div class="col-md-6">
-                                        <p> <input type="text" id="lastname" placeholder="Last Name"></p>
+                                        <p> <input type="text" id="lastname" name="lastname" placeholder="Last Name"></p>
                                     </div>                                    
                                     <div class="col-md-12">                                        
                                         <p><input  type="text" id="email" name="email"  required="" placeholder="Email" maxlength="80" size="30"></p>
@@ -180,7 +180,7 @@
                                         <p><input  type="text" id="subject" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><textarea id="message" name="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                        <p><textarea id="message" name="message" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
                                     </div>
                                     <div class="col-md-12">                                        
                                         <div class="form-group col mb-3-5">
@@ -452,10 +452,18 @@
         To : 'manideep723@gmail.com',
         From : "vsbsurfaces.website@gmail.com",
         Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> For email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
+        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
         + message
+     
+			
     }).then(
-      message => alert("Your message has been sending sucessfully")
+      message => alert("Your message has been sending sucessfully"),
+      document.getElementById("firstname").value = "",
+      document.getElementById("lastname").value = "",
+      document.getElementById("email").value = "",
+      document.getElementById("telephone").value = "",
+      document.getElementById("subject").value = "",
+      document.getElementById("message").value = "",
     );
         }
       </script> 
