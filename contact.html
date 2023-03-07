@@ -162,25 +162,25 @@
                                 <p>Drop any enquires  related to Granite,here below one of our team members  will get back shortly </p>
                             </div>
                             
-                            <form name="contactform" method="post" action="send_form_email.php" class="wpcf7-form">
+                            <form name="contactform" method="post"   class="wpcf7-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p><input type="text" placeholder="First Name"></p>
+                                        <p><input type="text" id="firstname" required="" placeholder="First Name"></p>
                                     </div>
                                     <div class="col-md-6">
-                                        <p> <input type="text" placeholder="Last Name"></p>
+                                        <p> <input type="text" id="lastname" placeholder="Last Name"></p>
                                     </div>                                    
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="email" placeholder="Email" maxlength="80" size="30"></p>
+                                        <p><input  type="text" id="email" name="email"  required="" placeholder="Email" maxlength="80" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
+                                        <p><input  type="text" id="telephone" required="" name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
+                                        <p><input  type="text" id="subject" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><textarea  name="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                        <p><textarea id="message" name="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
                                     </div>
                                     <div class="col-md-12">                                        
                                         <div class="form-group col mb-3-5">
@@ -189,7 +189,7 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="col-md-12 text-left">
-                                        <input type="submit" value="SEND" class="btn btn-primary width">
+                                        <input type="button" onclick="Mail();" value="SEND" class="btn btn-primary width">
                                         <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
                                     </div>
                                 </div>
@@ -435,6 +435,30 @@
     </div>
     
     <a id="to-the-top" ><i class="fa fa-angle-up"></i></a>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        
+        
+        function Mail(){
+        let name = document.getElementById("firstname").value;
+        let email = document.getElementById("email").value;
+        let Contact = document.getElementById("telephone").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+          Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "vsbsurfaces.website@gmail.com",
+        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
+        To : 'manideep723@gmail.com',
+        From : "vsbsurfaces.website@gmail.com",
+        Subject : "This is the subject",
+        Body : "Name:" + name + "<br/> For email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
+        + message
+    }).then(
+      message => alert("Your message has been sending sucessfully")
+    );
+        }
+      </script> 
 
     <!-- LOAD JS FILES -->
     <script src="js/jquery.min.js"></script>
