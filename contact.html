@@ -162,19 +162,21 @@
                                 <p>Drop any enquires  related to Granite,here below one of our team members  will get back shortly </p>
                             </div>
                             
-                            <form name="contactform" method="post"   class="wpcf7-form">
+                            <form  id='contactform' name="contactform" method="post"   class="wpcf7-form needs-validation" novalidate>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p><input type="text" id="firstname"   name="firstname" required="" placeholder="First Name"></p>
+                                        <p><input type="text" id="firstname" required  name="firstname"  placeholder="First Name"></p>
+                                        
                                     </div>
                                     <div class="col-md-6">
-                                        <p> <input type="text" id="lastname" name="lastname" placeholder="Last Name"></p>
+                                        <p> <input type="text" id="lastname"  name="lastname" placeholder="Last Name"></p>
                                     </div>                                    
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" id="email" name="email"  required="" placeholder="Email" maxlength="80" size="30"></p>
+                                        <p><input  type="text" id="email" name="email"  required  placeholder="Email" maxlength="80" size="30"></p>
+                                       
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" id="telephone" required="" name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
+                                        <p><input  type="text" id="telephone" required name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
                                         <p><input  type="text" id="subject" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
@@ -218,25 +220,26 @@
                                 <p>Drop any enquires  related to Quartz,here below one of our team members  will get back shortly </p>
                             </div>
                             
-                            <form name="contactform" method="post" action="send_form_email.php" class="wpcf7-form">
+                            <form   name="contactform" method="post" class="wpcf7-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p><input type="text" placeholder="First Name"></p>
+                                        <p><input type="text" id="first" placeholder="First Name"></p>
                                     </div>
                                     <div class="col-md-6">
-                                        <p> <input type="text" placeholder="Last Name"></p>
+                                        <p> <input type="text" id="last" placeholder="Last Name"></p>
                                     </div>                                    
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="email" placeholder="Email" maxlength="80" size="30"></p>
+                                        <p><input  type="text" id="emailtwo"   name="email" placeholder="Email" maxlength="80" size="30"></p>
+                                       
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
+                                        <p><input  type="text" id="telephonetwo"   name="telephone" required  placeholder="Telephone" maxlength="30" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
+                                        <p><input  type="text" id="subjecttwo"   name="subject" required placeholder="Subject" maxlength="50" size="30"></p>   
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><textarea  name="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                        <p><textarea  id="messagetwo" required="please fill the message" name="messagetwo" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
                                     </div>
                                     <div class="col-md-12">                                        
                                         <div class="form-group col mb-3-5">
@@ -246,7 +249,7 @@
                                     
                                     <div class="clearfix"></div>
                                     <div class="col-md-12 text-left">
-                                        <input type="submit" value="SEND" class="btn btn-primary width">
+                                        <input type="button" onclick="Send();" value="SEND" class="btn btn-primary width">
                                         <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
                                     </div>
                                 </div>
@@ -271,61 +274,7 @@
                 </div>      
             </section>
             <!-- section close -->
-            <!-- <section id="section-contact" class="no-padding">                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Our Granite Location</h4>
-                            <ul class="contact-list">
-                                <p>VENKATA SRI BALAJI EXPORTS,
-                                    SY.NO. 197/5,197/8,197/9,197,13 &14 , NH-5,</p>
-                                   <p> GUNDLAPALLI(V),
-                                    MADDIPADU(M),
-                                    PRAKASAM(DIST),
-                                    ANDHRA PRADESH,
-                                    INDIA-523211.</p>
-                           
-                               
-                                <li><i class="fa fa-phone"></i> <a href="tel:99082 27218" style="color:#666666;">Contact: +91-99082 27218</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Our Quartz Location</h4>
-                            <ul class="contact-list">
-                                <p>VENKATA SRI BALAJI QUARTZ SURFACES
-                                    Sy.No.s 197/3,4,6,7,10,11&12, NH5,</p>
-                                   <p> GUNDLAPALLI (V),
-                                    MADDIPADU (M),
-                                    PRAKASAM (DIST)
-                                    ANDHRA PRADESH
-                                    INDIA-523211,</p>
-                                    <li><i class="fa fa-phone"></i><a href="tel:90308 49253" style="color:#666666;">Contact: +91-90308 49253</a></li></ul>
-                              
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
-            <!-- <section id="section-contact" class="no-padding">                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            
-                                
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491712.9603492514!2d80.018029!3d15.671193000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fb849ecf1adac34!2sVENKATA%20SRI%20BALAJI%20EXPORTS%20(100%25%20EOU)!5e0!3m2!1sen!2sus!4v1676443771366!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="col-md-6">
-                           
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
-                
-                
+            
 
             <!-- section gmap begin -->
             <section id="section-contact" class="no-padding"  style="background-color: #eff2f3; margin-bottom:0px;">                
@@ -340,8 +289,7 @@
                     </div>
                 </div>   
 
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491712.9603492514!2d80.018029!3d15.671193000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fb849ecf1adac34!2sVENKATA%20SRI%20BALAJI%20EXPORTS%20(100%25%20EOU)!5e0!3m2!1sen!2sus!4v1676443771366!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                     
+                  
             </section>
             <!-- section gmap close -->
 
@@ -440,6 +388,31 @@
         
         
         function Mail(){
+            if (document.getElementById("firstname").value == "") {
+            alert("Please enter your first name");
+            document.getElementById("firstname").focus();
+            return false;
+        }
+        if (document.getElementById("lastname").value == "") {
+            alert("Please enter your last name");
+            document.getElementById("lastname").focus();
+            return false;
+        }
+        if (document.getElementById("email").value == "") {
+            alert("Please enter your email address");
+            document.getElementById("email").focus();
+            return false;
+        }
+        if (document.getElementById("telephone").value == "") {
+            alert("Please enter your telephone number");
+            document.getElementById("telephone").focus();
+            return false;
+        }
+        if (document.getElementById("message").value == "") {
+            alert("Please enter your message");
+            document.getElementById("message").focus();
+            return false;
+        }
         let name = document.getElementById("firstname").value;
         let email = document.getElementById("email").value;
         let Contact = document.getElementById("telephone").value;
@@ -457,13 +430,68 @@
      
 			
     }).then(
+      message => {
+        alert("Your message has been sent successfully");
+        document.getElementById("contactform").reset();
+      }
+    );
+  }
+      </script> 
+
+      form 2
+      <script>
+        
+        
+        function Send(){
+            if (document.getElementById("first").value == "") {
+            alert("Please enter your first name");
+            document.getElementById("first").focus();
+            return false;
+        }
+        if (document.getElementById("last").value == "") {
+            alert("Please enter your last name");
+            document.getElementById("last").focus();
+            return false;
+        }
+        if (document.getElementById("emailtwo").value == "") {
+            alert("Please enter your email address");
+            document.getElementById("emailtwo").focus();
+            return false;
+        }
+        if (document.getElementById("telephonetwo").value == "") {
+            alert("Please enter your telephone number");
+            document.getElementById("telephonetwo").focus();
+            return false;
+        }
+        if (document.getElementById("messagetwo").value == "") {
+            alert("Please enter your message");
+            document.getElementById("messagetwo").focus();
+            return false;
+        }
+        let name = document.getElementById("first").value;
+        let email = document.getElementById("emailtwo").value;
+        let Contact = document.getElementById("telephonetwo").value;
+        let subject = document.getElementById("subjecttwo").value;
+        let message = document.getElementById("messagetwo").value;
+          Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "vsbsurfaces.website@gmail.com",
+        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
+        To : 'manideepmadhuri456@gmail.com',
+        From : "vsbsurfaces.website@gmail.com",
+        Subject : "This is the subject",
+        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
+        + message
+     
+			
+    }).then(
       message => alert("Your message has been sending sucessfully"),
-      document.getElementById("firstname").value = "",
-      document.getElementById("lastname").value = "",
-      document.getElementById("email").value = "",
-      document.getElementById("telephone").value = "",
-      document.getElementById("subject").value = "",
-      document.getElementById("message").value = "",
+      document.getElementById("first").value = "",
+      document.getElementById("last").value = "",
+      document.getElementById("emailtwo").value = "",
+      document.getElementById("telephonetwo").value = "",
+      document.getElementById("subjecttwo").value = "",
+      document.getElementById("messagetwo").value = "",
     );
         }
       </script> 
