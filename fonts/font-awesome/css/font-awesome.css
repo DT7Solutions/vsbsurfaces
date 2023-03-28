@@ -186,6 +186,9 @@
 .fa-music:before {
   content: "\f001";
 }
+.fa-thermometer-full:before {
+  content: "\f2c7";
+}
 .fa-search:before {
   content: "\f002";
 }
@@ -300,6 +303,9 @@
 }
 .fa-qrcode:before {
   content: "\f029";
+}
+.fa-heat:before {
+  content:"e00c";
 }
 .fa-barcode:before {
   content: "\f02a";
@@ -877,6 +883,9 @@
 }
 .fa-ambulance:before {
   content: "\f0f9";
+}
+.fa-free-code-camp{
+  content:"\f2c5"
 }
 .fa-medkit:before {
   content: "\f0fa";
