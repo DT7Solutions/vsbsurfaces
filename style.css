@@ -4974,7 +4974,7 @@ nav.site-desktop-menu > ul > li > a.active{
 }
 .post-entry p{
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
