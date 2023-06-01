@@ -4274,4 +4274,6 @@ footer.footer-2 .sub-footer {
   text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
-
+img{
+  border-radius: 3px!important;
+}
