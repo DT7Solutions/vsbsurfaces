@@ -942,7 +942,7 @@ section,
 }
 blockquote {
   font-family: 'Droid Serif', serif;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 15px;
   line-height: 25px;
   color: #333333;
