@@ -127,10 +127,14 @@
             <!-- revolution slider begin -->
             <div class="fullwidthbanner-container">
                 <div id="revolution-slider">
-                    <ul>
+                    <ul >
                        <!--  popup banner image -->
-                        <!-- <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">  
-                            <img src="img-rev-slider/vsb-independence-day.jpeg" alt="pop up banner">
+                       <!-- <li data-transition="fade" id="bannerSlide" data-slotamount="7" data-masterspeed="2500" data-delay="5000" style="display: none;">  
+                        <img src="img-rev-slider/vsb-raksha-bandhan.png" alt="pop up banner">
+                    </li> -->
+                   
+                        <!-- <li data-transition="fade" id="bannerImage"  data-slotamount="7" data-masterspeed="2500" data-delay="5000" style="display: none;" >  
+                            <img  src="img-rev-slider/vsb-raksha-bandhan.png" alt="pop up banner"  >
                         </li> -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
                             <!--  BACKGROUND IMAGE -->
@@ -721,7 +725,7 @@
           
             
             <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog" style="display:flex;flex-direction: row;justify-content: center;">
+            <!-- <div id="myModal" class="modal fade" role="dialog" style="display:flex;flex-direction: row;justify-content: center;">
               <div class="modal-dialog" >
                 
                 <div class="modal-content">
@@ -733,11 +737,11 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div id="sectionToAppear" style="display: none;">
+            <!-- <div id="sectionToAppear" style="display: none;">
                 This section appears after the modal.
-            </div>
+            </div> -->
            <!-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabelfive" aria-hidden="true" data-wow-delay="0.6s">
             <div class="modal-dialog">
               <div class="modal-header">
@@ -896,15 +900,17 @@
                         
         </script>
         -->
-        <script>
-            // Set the target date and time for the modal and section appearance
+
+        <!-- autoupdate popup -->
+        <!-- <script>
+          
             const targetDate = new Date('2023-08-28T15:40:00'); // August 29, 2023, 8:00 AM
         
-            // Calculate the time until the target date in milliseconds
+            
             const currentTime = new Date();
             const timeUntilTarget = targetDate - currentTime;
         
-            // Use setTimeout to open the modal and show the section at the specified time
+          
             setTimeout(() => {
                 const modal = document.getElementById('myModal');
                 $(modal).modal('show');
@@ -913,8 +919,24 @@
                 sectionToAppear.style.display = 'block';
             }, timeUntilTarget);
         </script>
+         -->
+         <!-- <script>
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 1); // Tomorrow
+            targetDate.setHours(11, 0, 0, 0); // Set time to 11:00 AM
         
-   
+            const currentTime = new Date();
+            const timeUntilTarget = targetDate - currentTime;
+        
+            setTimeout(() => {
+                const bannerSlide = document.getElementById('bannerSlide');
+                bannerSlide.style.display = 'block';
+        
+                const sectionToAppear = document.getElementById('sectionToAppear');
+                sectionToAppear.style.display = 'block';
+            }, timeUntilTarget);
+        </script>
+    -->
 
 </body>
 </html>
