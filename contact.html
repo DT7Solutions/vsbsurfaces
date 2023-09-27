@@ -385,60 +385,72 @@
     </div>
     
     <a id="to-the-top" ><i class="fa fa-angle-up"></i></a>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        
-        
-        function Mail(){
-            if (document.getElementById("firstname").value == "") {
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("45s2CZnZLG-S1NXJ6");
+   })();
+</script>
+
+<script>
+   function Mail() {
+    if (document.getElementById("firstname").value == "") {
             alert("Please enter your first name");
             document.getElementById("firstname").focus();
             return false;
         }
-        if (document.getElementById("lastname").value == "") {
+
+    if (document.getElementById("lastname").value == "") {
             alert("Please enter your last name");
             document.getElementById("lastname").focus();
             return false;
-        }
-        if (document.getElementById("email").value == "") {
+    }
+    if (document.getElementById("email").value == "") {
             alert("Please enter your email address");
             document.getElementById("email").focus();
             return false;
-        }
-        if (document.getElementById("telephone").value == "") {
+    }
+    if (document.getElementById("telephone").value == "") {
             alert("Please enter your telephone number");
             document.getElementById("telephone").focus();
             return false;
-        }
-        if (document.getElementById("message").value == "") {
+    }
+    if (document.getElementById("message").value == "") {
             alert("Please enter your message");
             document.getElementById("message").focus();
             return false;
-        }
-        let name = document.getElementById("firstname").value;
-        let email = document.getElementById("email").value;
-        let Contact = document.getElementById("telephone").value;
-        let subject = document.getElementById("subject").value;
-        let message = document.getElementById("message").value;
-          Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "vsbsurfaces.website@gmail.com",
-        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
-        To : 'sales@vsbquartz.com',
-        From : "vsbsurfaces.website@gmail.com",
-        Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
-        + message
-     
-			
-    }).then(
-      message => {
-        alert("Your message has been sent successfully");
-        document.getElementById("contactform").reset();
-      }
-    );
-  }
-      </script> 
+    }
+    var params = {
+        name: document.getElementById("firstname").value,
+        lastname : document.getElementById("lastname").value,
+        email: document.getElementById("email").value,
+        phonenumber: document.getElementById("telephone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+        
+  };
+    const serviceID = "service_k8fk3h8";
+    const templateID = "template_y9di1bu";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("firstname").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("telephone").value = "";
+        document.getElementById("subject").value= "";
+        document.getElementById("message").value= "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
+</script>
+    
 
      
       <script>
@@ -470,32 +482,33 @@
             document.getElementById("messagetwo").focus();
             return false;
         }
-        let name = document.getElementById("first").value;
-        let email = document.getElementById("emailtwo").value;
-        let Contact = document.getElementById("telephonetwo").value;
-        let subject = document.getElementById("subjecttwo").value;
-        let message = document.getElementById("messagetwo").value;
-          Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "vsbsurfaces.website@gmail.com",
-        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
-        To : 'sales@vsbexports.com',
-        From : "vsbsurfaces.website@gmail.com",
-        Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
-        + message
-     
-			
-    }).then(
-      message => alert("Your message has been sending sucessfully"),
-      document.getElementById("first").value = "",
-      document.getElementById("last").value = "",
-      document.getElementById("emailtwo").value = "",
-      document.getElementById("telephonetwo").value = "",
-      document.getElementById("subjecttwo").value = "",
-      document.getElementById("messagetwo").value = "",
-    );
-        }
+        var params = {
+        name: document.getElementById("first").value,
+        lastname : document.getElementById("last").value,
+        email: document.getElementById("emailtwo").value,
+        phonenumber: document.getElementById("telephonetwo").value,
+        subject: document.getElementById("subjecttwo").value,
+        message: document.getElementById("messagetwo").value,
+        
+  };
+    const serviceID = "service_d03iazk";
+    const templateID = "template_0a97luk";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("first").value = "";
+        document.getElementById("last").value = "";
+        document.getElementById("emailtwo").value = "";
+        document.getElementById("telephonetwo").value = "";
+        document.getElementById("subjecttwo").value= "";
+        document.getElementById("messagetwo").value= "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
       </script> 
 
     <!-- LOAD JS FILES -->
