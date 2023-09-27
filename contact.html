@@ -244,7 +244,7 @@
                                     </div>
                                     <div class="col-md-12">                                        
                                         <div class="form-group col mb-3-5">
-                                            <div class="g-recaptcha" data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
+                                            <div class="g-recaptcha" id="recaptcha"  data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
                                         </div>
                                     </div>
                                     
@@ -464,11 +464,7 @@
         
         
         function Send(){
-            var recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length === 0) {
-        alert("Please complete the reCAPTCHA verification.");
-        return false; // Prevent form submission if reCAPTCHA is not completed
-    }
+           
 
            
    
@@ -498,6 +494,13 @@
             document.getElementById("messagetwo").focus();
             return false;
         }
+        var recaptchaCheckbox = document.getElementById("recaptcha");
+        if (!recaptchaCheckbox.checked) {
+        alert("Please check the reCAPTCHA checkbox.");
+        return false; // Prevent form submission if the checkbox is not checked
+    }
+    
+    
         var params = {
         name: document.getElementById("first").value,
         lastname : document.getElementById("last").value,
