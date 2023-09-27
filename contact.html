@@ -396,11 +396,7 @@
 
 <script>
    function Mail() {
-    var recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length === 0) {
-        alert("Please complete the reCAPTCHA verification.");
-        return false; // Prevent form submission if reCAPTCHA is not completed
-    }
+    
     
     if (document.getElementById("firstname").value == "") {
             alert("Please enter your first name");
@@ -494,11 +490,21 @@
             document.getElementById("messagetwo").focus();
             return false;
         }
-        var recaptchaCheckbox = document.getElementById("recaptcha");
-        if (!recaptchaCheckbox.checked) {
-        alert("Please check the reCAPTCHA checkbox.");
-        return false; // Prevent form submission if the checkbox is not checked
+        var recaptchaResponse = document.getElementById("recaptcha");
+        if (recaptchaResponse.length === 0) {
+        alert("Please complete the reCAPTCHA verification.");
+        return false; // Prevent form submission if reCAPTCHA is not completed
     }
+
+
+
+
+
+
+
+        
+    
+       
     
     
         var params = {
