@@ -490,12 +490,7 @@
             document.getElementById("messagetwo").focus();
             return false;
         }
-        var recaptchaResponse = document.getElementById("recaptcha");
-        var recaptchaResponse = grecaptcha.getResponse();
-        if (recaptchaResponse.length === 0) {
-        alert("Please complete the reCAPTCHA verification.");
-        return false; // Prevent form submission if reCAPTCHA is not completed
-    }
+        
 
 
 
