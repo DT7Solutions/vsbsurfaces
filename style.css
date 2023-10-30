@@ -5005,3 +5005,11 @@ nav.site-desktop-menu > ul > li > a.active{
 .latest-projects-intro h2 {
   font-size: 23px;
 }
+.shadow{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)!important;
+  /* margin-right: calc(1.5rem * .5)!important;
+  margin-left: calc(1.5rem * .5)!important; */
+  padding: 20px!important;
+  min-height: 450px!important;
+  
+}
