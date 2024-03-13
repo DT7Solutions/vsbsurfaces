@@ -1,0 +1,390 @@
+/* ==================================contact page ===================================== */
+.service-details{
+    margin: auto;
+    width: 550px;
+    margin-bottom:30px;
+    /* margin: 0 12px; */
+}
+.contact-address-info{
+    background-color: #ffffff;
+    padding:15px 15px;
+}
+
+.contact-list{
+    font-size:16px;
+}
+.contact-list span{
+    margin-left:18px !important;
+    float: left;
+}
+
+.nav-tabs-info{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px lightgray;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    /* margin: auto; */
+}
+
+
+.nav-tabs-info li a{
+    border-radius: 30px !important;
+    margin: 0 5px;
+    color: black;
+    background-color: #f7f7f7;
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    text-align: center;
+    line-height:26px;
+}
+.nav-tabs-info li a:hover{
+    color: black !important;
+}
+
+.nav-tabs-info li a input[type=radio]{
+    font-size: 80px !important;
+    
+}
+.btn-send{
+    background-color: #042433 !important;
+}
+
+.address-tag{
+    display: flex;
+    align-items: baseline;
+}
+
+@media(min-width:320px) and (max-width:480px){
+    .form-title-head{
+        text-align: center;
+    }
+    .nav-tabs-info{
+        background-color: #ffffff;
+        box-shadow: 0 0 5px lightgray;
+        padding: 20px;
+        border-radius: 50px;
+        margin: auto;
+    }
+    .nav-tabs-info li a{
+        display:inline !important;
+        border-radius: 30px !important;
+        color: black;
+        background-color: #f7f7f7;
+        font-size: 15px !important;
+        text-align: center;
+        line-height: normal;
+    }
+    .tab-content form{
+       margin: 0px 0px !important;
+       width: auto !important;
+    }
+    .contact-list span{
+        width: 100%;
+        float: inline-start;
+    }
+    .contact-info{
+        margin-bottom: 70px;
+    }
+}
+
+.site-header-1 .stuck .header-buttons {
+    margin-top: 21px !important;
+    text-align: center !important;
+}
+
+
+/* ==========================================================blogs page ============================================== */
+
+.form-title-head{
+    margin-bottom: 40px;
+    word-spacing: 3px;
+}
+
+
+.hr-line{
+    position: relative;
+}
+
+.first-line{
+    border: 1px solid #459cd6;
+    width: 61%;
+    margin-top: -15px;
+    
+}
+
+.first-line::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: -3px;
+    left: 18.8%;
+    background-color: #459cd6;
+    border-radius: 50%;
+    position: absolute;
+}
+.first-line::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: -13%;
+    right: 19%;
+    background-color: #459cd6;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.second-line{
+    border: 1px solid #459cd6;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.second-line::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: 19px;
+    left: 24.5%;
+    background-color: #459cd6;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.second-line::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: 19px;
+    right: 24.5%;
+    background-color: #459cd6;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.btn-primary{
+    background-color: white !important;
+    color:black;
+    border: 1px solid #459cd6;
+    border-radius: 50px;
+    font-size: 10px;
+
+}
+
+.btn-primary:hover{
+    background-color: #b2daf2 !important;
+    color:black !important;
+    border: 1px solid #459cd6 !important;
+    border-radius: 50px !important;
+}
+
+.byline{
+    background-color:#b1dbf1;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.pagination-ourter{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media(min-width:320px) and (max-width:480px){
+    .hr-line{
+        position: relative;
+    }
+    .first-line::before{
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: -3px;
+        left: 18.8%;
+        background-color: #459cd6;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .first-line::after{
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: -12%;
+        right: 17%;
+        background-color: #459cd6;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .second-line::before{
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 19px;
+        left: 24.5%;
+        background-color: #459cd6;
+        border-radius: 50%;
+        position: absolute;
+    }
+    
+    .second-line::after{
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 19px;
+        right: 24.5%;
+        background-color: #459cd6;
+        border-radius: 50%;
+        position: absolute;
+    }
+    
+}
+
+/* =================================================== Engineered Page =================================== */
+
+.products .explore-quartx{
+    margin-bottom: 30px !important;
+}
+.single-item{
+    box-shadow: 0 0 10px lightgray;
+    padding: 15px;
+}
+.single-item .product-detail h3 a{
+    font-weight: 900 !important;
+}
+
+.fa-arrow-left,.fa-arrow-right{
+    font-size: 15px;
+}
+
+
+.owl-theme .owl-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+.overlay-text{
+    position: relative;
+    display: none; 
+}
+
+
+.img-stones:hover .overlay-text{
+    position: fixed;
+    display: block !important; 
+    background-color:rgba(0, 0, 0, 0.5) !important;
+    width: 92%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-100%);
+    color: #459cd6 !important;
+    overflow: hidden;
+    /* transition: 3s !important; */
+
+}
+
+/* .img-stones:hover .overlay-text:hover{
+    transform: translateY(0%);
+} */
+
+
+
+
+  @media(min-width:320px) and (max-width:480px){
+    .last-two-cards {
+        display:block;
+    }
+}
+
+
+/* ============================= Natural Stones Page ============================== */
+.overlay-texts{
+    position: relative;
+    display: none;
+}
+
+.img-stones:hover .overlay-texts{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 92%;
+    padding: 15px;
+    text-align: center;
+    transform: translateY(-100%);
+    display: block;
+    overflow: hidden;
+}
+
+footer .main-footer .widget-inner ul {
+    list-style:disc !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  footer .main-footer .widget-inner ul li:before {
+    font-family: '' !important;
+    display: inline-block;
+    font-size: 13px;
+    content: "" !important;
+    color: #e5e5e5;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+  }
+
+  footer .main-footer .widget-inner ul li {
+    margin-bottom: 10px !important;
+    padding-left: 0px !important;
+    position: relative !important;
+  }
+
+
+/* .sub-footer .blog-footer-rights{
+    display: flex !important;
+    justify-content:space-between !important;
+    align-items: center !important;
+} */
+
+nav.site-desktop-menu {
+    width: auto;
+    float: left;
+    margin-top: 0px;
+    margin-left: 60px !important;
+  }
+
+  .last-cards{
+    margin: auto !important;
+  }
+
+  /* ====================================== Footer Page =================================== */
+
+  .foter-all-rights{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+  @media(min-width:320px) and (max-width:480px){
+
+    footer .main-footer .widget-inner ul {
+        list-style:disc !important;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      footer .main-footer .widget-inner ul li{
+        margin-left: 15px;
+      }
+      .foter-all-rights{
+        display: block;
+      }
+      
+}
+
+  
+/* @media (min-width: 992px)
+.col-md-offset-2 {
+    margin-left: 16.66666667%;
+} */
