@@ -105,7 +105,8 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     color: #E16B3D!important;
   }
 .title, .box-title{
-    color: #1c1c1c;
+    /* color: #1c1c1c; */
+    color: #E16B3D;
 }
 .home-about-img{
     position: absolute;
