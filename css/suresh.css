@@ -1,3 +1,23 @@
+
+/* ======================================== navbar ==================================== */
+ nav.site-desktop-menu > ul > li > a {
+        color: #fff;
+        text-transform: capitalize;
+        padding: 0px 20px;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-decoration: none;
+        -webkit-transition: .0s !important;
+        transition: .0s !important;
+        display: block;
+        font-size: 13px;
+        overflow: hidden !important;
+        cursor: pointer !important;
+}
+
+
 /* ==================================contact page ===================================== */
 .service-details{
     margin: auto;
