@@ -12,7 +12,8 @@
     <link rel="icon" href="images/icons/vsb-favicon.png" type="image/x-icon">       
    
     <!-- LOAD CSS FILES -->    
-    <link href="style.css" rel="stylesheet" type="text/css">  
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/suresh.css">  
 
     <!-- color scheme -->
     <link rel="stylesheet" href="switcher/demo.css" type="text/css">
@@ -52,11 +53,50 @@
                     <div class="row">                    
                         <div class="col-md-12 " >
 
-                            <!-- logo begin -->
-                            <div id="logo" class="pull-left">                            
-                                <a href="./">
-                                    <img src="images/vsbsurfaces-header-logo-150x60.png" alt="" class="logo">
-                                </a>
+                        <!-- logo begin -->
+                        <div id="logo" class="pull-left">                            
+                            <a href="index.html">
+                                <img src="images/vsbsurfaces-logo-150x60.png" alt="" class="logo">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- btn-mobile menu begin -->
+                        <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
+                        <!-- btn-mobile menu close -->  
+
+                        <!-- mobile menu begin -->
+                        <nav id="mobile-menu" class="site-mobile-menu hidden-lg hidden-md">
+                            <ul></ul>
+                        </nav>  
+                        <!-- mobile menu close -->                        
+
+                        <!-- desktop menu begin -->
+                        <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm" style="margin-left: 120px;">
+                            <ul class="clearfix">
+                                <li class="active" style="font-weight: bold;"><a href="./">Home</a></li>
+                                <li><a href="./about" style="font-weight: bold;">About Us</a>
+                                    <ul>
+                                        <li><a href="./aboutgranite" style="font-weight: bold;">Granite's</a></li>
+                                        <li><a href="./aboutquartz" style="font-weight: bold;">Quartz's</a></li>
+                                       
+                                                                                 
+                                    </ul>
+                                </li>
+                                <li><a href="./natural-stone" style="font-weight: bold;">Natural Stone</a></li>
+                                <li><a href="./engineered-stone" style="font-weight: bold;">Engineered stone</a></li>
+                                <li><a href="./news-events" style="font-weight: bold;">News Events</a></li>
+                                <li><a href="./blog" style="font-weight: bold;" class="active">Blog</a></li>
+                                <li><a href="./contact" style="font-weight: bold;">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-buttons pull-right hidden-xs hidden-sm">
+                            <!-- Top Cart -->
+                            <div class="header-social-icons">
+                                  <a href="#" class="facebook tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="twitter tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
+                                  <a href="#" class="youtube tipped" data-title="youtube"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-youtube-play"></i></a>
+                                  <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-linkedin"></i></a>
                             </div>
                             
                         
@@ -303,9 +343,14 @@
                             <div class="compact-widget">
                                 <h3 class="widget-title">Contact</h3>
                                 <div class="widget-inner">
-                                    <p>Address: Gundlapalli (vill) , Maddipadu (Mdl) , Prakasam (Dist) , Andhrapradesh , India 523211</p>
-                                    <p>Phone: +91 0988-524-2459</p>
-                                    <p>Email: info@vsbsurfaces.com</p>
+                                    <ul>
+                                        <li>Address: Gundlapalli (vill) , Maddipadu (Mdl) , Prakasam (Dist) , Andhrapradesh ,
+                                            India 523211</li>
+                                        <li><a style="color:#999999;text-decoration: none; " href="tel:+91988-524-2459">Phone:
+                                                988-524-2459</a></li>
+                                        <li><a style="color: #999 !important;;text-decoration: none; "
+                                                href="mailto:info@vsbsurfaces.com">Email: info@vsbsurfaces.com</a></li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -322,8 +367,15 @@
             <div class="sub-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            Copyright &copy; 2023 vsbsurfaces. All rights reserved.
+                        <div class="col-md-12 text-center blog-footer-rights">
+                            <div>
+                                All rights reserved &copy; vsbsurfaces 2023
+                            </div>
+                           <div>
+                                Designed By <a
+                                href="https://dt7solutions.com/" target="_blank"
+                                style="color: rgb(206, 203, 203);">DT7Solutions.com</a>
+                           </div>
                         </div>
                     </div>
                 </div>

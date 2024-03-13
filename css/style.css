@@ -94,7 +94,7 @@ nav.site-desktop-menu {
   width: auto;
   float: left;
   margin-top: 0px;
-  margin-left: 20px;
+  margin-left: 60px !important;
 }
 nav.site-desktop-menu > ul {
   float: right;
@@ -3655,7 +3655,7 @@ footer .main-footer .widget-title {
   margin-top: 25px;
 }
 footer .main-footer .widget-inner ul {
-  list-style: none;
+  list-style:none;
   margin: 0px;
   padding: 0px;
 }
@@ -4275,3 +4275,12 @@ footer.footer-2 .sub-footer {
 }
 /*# sourceMappingURL=style.css.map */
 
+
+
+.last-two-cards{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 0 0 lightgray !important;
+
+}
