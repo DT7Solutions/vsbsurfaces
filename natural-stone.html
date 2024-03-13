@@ -20,6 +20,10 @@
     <!-- color scheme -->
     <link rel="stylesheet" href="switcher/demo.css" type="text/css">
     <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors">
+    
+    <!-- Custom CSS FILES -->    
+    <link href="css/chaitanya.css" rel="stylesheet" type="text/css">
+    
     <style>
         @font-face {
             font-family: 'Magdelin Alt Regular';
@@ -56,16 +60,17 @@
         <header class="site-header-1 site-header">
             <!-- Main bar start -->
             <div id="sticked-menu" class="main-bar">
-                <div class="container">                
+                <div class="container-fluid">                
                     <div class="row">                    
                         <div class="col-md-12 " >
 
                             <!-- logo begin -->
                             <div id="logo" class="pull-left">                            
                                 <a href="./">
-                                    <img src="images/vsbsurfaces-logo-150x60.png" alt="" class="logo">
+                                    <img src="images/vsbsurfaces-header-logo-150x60.png" alt="" class="logo">
                                 </a>
                             </div>
+                            
                         
                             <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
                           
@@ -74,21 +79,28 @@
                             </nav>  
                            
                             <div >
-                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm" style="margin-left: 120px;">
-                                    <ul class="clearfix">
-                                        <li class="active" style="font-weight: bold;"><a href="./">Home</a></li>
+                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm">
+                                    <ul class="clearfix1">
+                                        <!-- <li style="font-weight: bold;"><a class="active" href="./">Home</a></li> -->
                                         <li><a href="./about" style="font-weight: bold;">About Us</a>
                                             <ul>
-                                                <li><a href="./aboutgranite" style="font-weight: bold;">Granite's</a></li>
-                                                <li><a href="./aboutquartz" style="font-weight: bold;">Quartz's</a></li>
-                                               
-                                                                                         
+                                                <li><a href="./about" style="font-weight: bold;">About VSB</a></li>
+                                                <li><a href="./aboutgranite" style="font-weight: bold;">About Granite's</a></li>
+                                                <li><a href="./aboutquartz" style="font-weight: bold;">About Quartz's</a></li>                                        
                                             </ul>
                                         </li>
-                                        <li><a href="./natural-stone" class="active" style="font-weight: bold;">Natural Stone</a></li>
+                                        <li><a class="active" href="./natural-stone" style="font-weight: bold;">Natural Stone</a></li>
                                         <li><a href="./engineered-stone" style="font-weight: bold;">Engineered stone</a></li>
+                                    </ul>
+                                    <div id="logo">                            
+                                        <a href="./">
+                                            <img src="images/vsbsurfaces-header-logo-150x60.png" alt="Desktop Logo" class="logo1">
+                                        </a>
+                                    </div>
+                                    <ul class="clearfix2">
                                         <li><a href="./blog" style="font-weight: bold;">Blog</a></li>
-                                        <li><a href="./contact" style="font-weight: bold;">Contact</a></li>
+                                        <li><a href="./news-events" style="font-weight: bold;">News Events</a></li>
+                                        <li><a href="./contact" class="btn btn-primary btn-small btn-radius" style="font-weight: bold;">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -98,7 +110,7 @@
                                 <!-- Top Cart -->
                                 <div class="header-social-icons">
                                       <a href="https://www.facebook.com/vsbgroupind" class="facebook tipped" target="_blank" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
-                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
+                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="Instagram"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
                                       <a href="https://www.youtube.com/channel/UCDkMapMXyJcgVmsIV2Uf4rA" class="youtube tipped" target="_blank"  data-title="youtube"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-youtube-play"></i></a>
                                       <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin tipped" data-title="linkedin" target="_blank"   data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-linkedin"></i></a>
                                 </div>

@@ -6,7 +6,7 @@
 
     /* natural stones-items */
     $("#latest-projects-items").owlCarousel({
-        items: 3,
+        items: 4,
         itemsCustom : false,
         loop: true,
         autoPlay : true,
@@ -27,7 +27,7 @@
       /* engineered stones-items2 */
       $("#latest-projects-items2").owlCarousel({
         rtl:false,
-        items: 3,
+        items: 4,
         itemsCustom : false,
         loop: true,
         autoPlay : true,
@@ -79,7 +79,7 @@
         items : 1,
         singleItem:true,    
         navigation : false,
-        pagination : false,
+        pagination : true,
         autoPlay : false,
         slideSpeed : 400,
     }); 

@@ -19,6 +19,10 @@
     <!-- color scheme -->
     <link rel="stylesheet" href="switcher/demo.css" type="text/css">
     <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors">  
+
+    <!-- Custom CSS FILES -->    
+    <link href="css/chaitanya.css" rel="stylesheet" type="text/css">
+
     <style>
         @font-face {
             font-family: 'Magdelin Alt Regular';
@@ -57,16 +61,17 @@
         <header class="site-header-1 site-header">
             <!-- Main bar start -->
             <div id="sticked-menu" class="main-bar">
-                <div class="container">                
+                <div class="container-fluid">                
                     <div class="row">                    
                         <div class="col-md-12 " >
 
                             <!-- logo begin -->
                             <div id="logo" class="pull-left">                            
                                 <a href="./">
-                                    <img src="images/vsbsurfaces-logo-150x60.png" alt="" class="logo">
+                                    <img src="images/vsbsurfaces-header-logo-150x60.png" alt="" class="logo">
                                 </a>
                             </div>
+                            
                         
                             <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
                           
@@ -75,22 +80,28 @@
                             </nav>  
                            
                             <div >
-                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm" style="margin-left: 120px;">
-                                    <ul class="clearfix">
-                                        <li style="font-weight: bold;"><a class="active" href="./">Home</a></li>
+                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm">
+                                    <ul class="clearfix1">
+                                        <!-- <li style="font-weight: bold;"><a class="active" href="./">Home</a></li> -->
                                         <li><a href="./about" style="font-weight: bold;">About Us</a>
                                             <ul>
-                                                <li><a href="./aboutgranite" style="font-weight: bold;">Granite's</a></li>
-                                                <li><a href="./aboutquartz" style="font-weight: bold;">Quartz's</a></li>
-                                               
-                                                                                         
+                                                <li><a href="./about" style="font-weight: bold;">About VSB</a></li>
+                                                <li><a href="./aboutgranite" style="font-weight: bold;">About Granite's</a></li>
+                                                <li><a href="./aboutquartz" style="font-weight: bold;">About Quartz's</a></li>                                        
                                             </ul>
                                         </li>
                                         <li><a href="./natural-stone" style="font-weight: bold;">Natural Stone</a></li>
                                         <li><a href="./engineered-stone" style="font-weight: bold;">Engineered stone</a></li>
-                                       
+                                    </ul>
+                                    <div id="logo">                            
+                                        <a href="./">
+                                            <img src="images/vsbsurfaces-header-logo-150x60.png" alt="Desktop Logo" class="logo1">
+                                        </a>
+                                    </div>
+                                    <ul class="clearfix2">
                                         <li><a href="./blog" style="font-weight: bold;">Blog</a></li>
-                                        <li><a href="./contact" style="font-weight: bold;">Contact</a></li>
+                                        <li><a href="./news-events" style="font-weight: bold;">News Events</a></li>
+                                        <li><a href="./contact" class="btn btn-primary btn-small btn-radius" style="font-weight: bold;">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -116,8 +127,6 @@
         <div class="gray-line"></div>
 
        
-
-        
 
         <!-- slider -->
         <div id="slider">
@@ -146,6 +155,9 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L720,288L1440,192L1440,320L720,320L0,320Z"></path></svg> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,128L720,256L1440,128L1440,0L720,0L0,0Z"></path></svg> -->
             <!-- revolution slider close -->
         </div>
         <!-- slider close -->
@@ -157,20 +169,21 @@
 
             <!-- section begin -->
             <section id="img-responsive" style="background-image: url(./images/home/vsb-surfaces-images-home-stone-nexa-1920x1010px.png);">
-                <div class="container pt-4">
+                <div class="home-about container pt-4">
                     <div class="row">
-                        <div class="col-md-5 col-sm-12">
-                            <img src="images/home/home-page-about-company-vizagblue-blackforest-tan-brown-steel-grey-image-vsbsurfaces-860x674px.png" alt="the finest natural and engineered stones in India" id='about-img' class="img-responsive">
-                        </div>
-                        <div class="col-md-7 col-sm-12">
+                        <div class="col-md-6 col-sm-12">
                             <div class="about-box">
-                                <h2 class="box-title">About the Company</h2>
+                                <h2 class="title">About the Company</h2>
                                 <div class="tiny-border"></div>
                                 <p>VSB Group is an exporter and distributor of the finest natural and engineered stones in India. We work with some of the top talents in the country to provide you with the best selection of the highest quality natural stone available. VSB Group is committed to offering a broad range of unique and exclusive Natural Stones, facilitating the ideal choice of materials in today’s world of architecture and interior design. Over the years, we have undergone progressive growth and strong expansion, becoming a leader in the field and contributing to the industry with innovation and technology</p>
                 
                                 <div class="divider-single"></div>
-                                <a href="/about" class="btn btn-primary btn-small">Know More</a>                                
+                                <a href="/about" class="btn btn-primary btn-small btn-radius">About Us <i class="fa fa-arrow-right fa-rotate-by fa-lg" style="margin-left: 10%; rotate: 315deg;"></i></a>                                
                             </div>
+                        </div>
+                        <div class="home-img col-md-6 col-sm-12">
+                            <img src="images/about/vsbsurfaces-aboutpage-company-857x437.png" alt="vsbsurfaces-aboutpage-company-857x437" id='about-img' class="img-responsive">
+                            <img src="images/home/home-page-about-company-vizagblue-blackforest-tan-brown-steel-grey-image-vsbsurfaces-860x674px.png" alt="the finest natural and engineered stones in India" id='about-img' class="img-responsive home-about-img">
                         </div>
                     </div>
                 </div>        
@@ -178,12 +191,12 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-project" style="background-color: #f1eded;">
+            <section id="section-project">
                 <div class="text-center" style="padding-top: 25px;">
-                    <h2>Our Products</h2>                                
+                    <h2 class="title">Our Products</h2>                                
                     <div class="tiny-border"></div>
                 </div>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="latest-projects clearfix">
@@ -191,7 +204,9 @@
                                     <h2 class="box-title">Natural Stones</h2>
                                     <div class="tiny-border-light"></div>            
                                     <p>
-                                        VSB Natural Stones offers a comprehensive list of natural stone products, including granite, marble, and other natural stones .</p>        
+                                        VSB Natural Stones offers a comprehensive list of natural stone products, including granite, marble, and other natural stones .
+                                    </p>
+                                    <a href="/#" class="btn btn-border-radius">View More</a>         
                                 </div>
                                 <div class="latest-projects-wrapper">
                                     <div id="latest-projects-items" class="latest-projects-items">
@@ -356,10 +371,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="container" style="margin-top: 120px;" >
+                <div class="container-fluid" style="margin-top: 60px;" >
                     <div class="row">
                         <div class="col-md-12" style=" margin-bottom: 40px;">
                             <div class="latest-projects clearfix">
+                                <div class="latest-projects-intro ">
+                                    <h2 class="box-title">Engineered Stones</h2>
+                                    <div class="tiny-border-light"></div>            
+                                    <p>
+                                        VSB Engineered Stones is a company that specializes in producing high-quality engineered stone products.
+                                    </p>
+                                    <a href="/#" class="btn btn-border-radius">View More</a>         
+                                </div>
                                 <div class="latest-projects-wrapper">
                                     <div id="latest-projects-items2" class="latest-projects-items">
                                         <div class="item d-flex justify-content-center">
@@ -464,12 +487,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="latest-projects-intro ">
-                                    <h2 class="box-title">Engineered Stones</h2>
-                                    <div class="tiny-border-light"></div>            
-                                    <p>
-                                        VSB Engineered Stones is a company that specializes in producing high-quality engineered stone products.</p>        
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -488,7 +505,7 @@
                                 <p>VSB Group is an exporter and distributor of the finest natural and engineered stones in India. We work with some of the top talents in the country to provide you with the best selection of the highest quality natural stone available. VSB Group is committed to offering a broad range of unique and exclusive Natural Stones, facilitating the ideal choice of materials in today’s world of architecture and interior design. Over the years, we have undergone progressive growth and strong expansion, becoming a leader in the field and contributing to the industry with innovation and technology.</p>
                 
                                 <div class="divider-single"></div>
-                                <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>                                
+                                <a href="contact.html" class="btn btn-primary btn-small btn-radius">Contact Us<i class="fa fa-arrow-right fa-rotate-by fa-lg" style="margin-left: 10%; rotate: 315deg;"></i></a>                                
                             </div>
                         </div>
                         <div class="col-md-7 col-sm-12">
@@ -504,58 +521,53 @@
             <!-- section begin -->
             <section id="section-testimonial" style="background-color: #eceaea;">
                 <div class="container">
-                    <div class="row" style="margin-top: 0px; padding-top:25px; padding-bottom:25px">                        
-                        <div class="col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2 class="box-title">Testimonials</h2>                                
+                        <div class="tiny-border"></div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-md-12 testimonials">
                             <div class="testimonials-slider-wrapper">
-                                <div class="text-center">
-                                    <h2>Testimonials</h2>                                
-                                    <div class="tiny-border"></div>
-                                </div>
                                 
-                                <div class="testimonials-slider text-center" style="margin-top: 0px; padding-top:30px; padding-bottom:30px">
+                                <div class="testimonials-slider text-center">
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular;">
+                                                Good managmnet and terriffic Managing Director
+                                            </blockquote>
                                             <div class="testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-seven-50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Shetty Shivalingappa</span>
-                                                    
                                                 </div>
                                             </div>
-                                            <blockquote style="font-family:Magdelin Alt regular;">
-                                                Good managmnet and terriffic Managing Director
-                                            </blockquote>
                                             
                                         </div>   
                                     </div>
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular; text-transform:lowercase">
+                                                SUPERB . NYC. A LOF OF SPACE FOR PARKING . NEAT MAINTENANCE. NYCE STAFF
+                                            </blockquote>
                                             <div class=" testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-eight--50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Sohail Ahmed Syed</span>
-                                                   
                                                 </div>
                                             </div>
-                                            <blockquote style="font-family:Magdelin Alt regular; text-transform:lowercase">
-                                                SUPERB . NYC. A LOF OF SPACE FOR PARKING . NEAT MAINTENANCE. NYCE STAFF
-                                            </blockquote>
-                                            
                                         </div> 
                                     </div>
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular;">
+                                                excellent and we'll organized and professionals with good experience 👍 …
+                                            </blockquote>
                                             <div class="testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-three-50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Tanveer Ahmed</span>
-                                                  
                                                 </div>
                                             </div>
-                                            <blockquote style="font-family:Magdelin Alt regular;">
-                                                excellent and we'll organized and professionals with good experience 👍 …
-                                            </blockquote>
-                                            
                                         </div> 
                                     </div>
                                 </div>
@@ -598,10 +610,10 @@
             </section> -->
             <!-- section close -->
             <!-- blog section close -->
-            <section >
+            <section class="our-blogs" style="background-color: #ffffff;">
                 <div class="container">
                     <div class="text-center">
-                        <h2>Our Blogs</h2>                                
+                        <h2 class="box-title">Our Blogs</h2>                                
                         <div class="tiny-border"></div>
                     </div>
                     <div class="row">
@@ -613,16 +625,22 @@
                                     <img class="card-img-top img-responsive" src="images/blogs/vsbsurfaces-blogpage-benefits-of-natural-stone-870x477.png" alt="Card image cap" idth="300"
                                     height="150" >
                                     <div class="card-body">
-                                      <h5 class="card-title">The Benefits of Natural Stone: Make Your Home Shine</h5>
-                                      <div class="post-metadata">
-                                        <span class="byline">
-                                            <i class="fa fa-user"></i>
-                                            <a href="#">Vsb Group</a>
-                                        </span>
-                                                                             
-                                    </div>
-                                      <p class="card-text">The Benefits of Natural Stone: Make Your Home ShineThere’s something about natural stone that just makes a home shine.</p>
-                                      <a href="/the-benefits-of-natural-stone-make-your-home-shine" class="btn btn-primary"><i class="fa fa-hand-o-right"></i>Read More</a>
+                                        <div class="post-metadata">
+                                            <span class="byline">
+                                                <i class="fa fa-user"></i>
+                                                <a href="#">Vsb Group</a>
+                                            </span>
+                                            <span class="byline">
+                                                <i class="fa fa-tag fa-flip-horizontal"></i>
+                                                <a href="#">Quartz</a>
+                                            </span>
+                                            <span class="byline">
+                                                <a href="#">Viscount White Granite</a>
+                                            </span>                                  
+                                        </div>
+                                        <h5 class="card-title">The Benefits of Natural Stone: Make Your Home Shine</h5>
+                                        <p class="card-text">The Benefits of Natural Stone: Make Your Home ShineThere’s something about natural stone that just makes a home shine.</p>
+                                        <a href="/the-benefits-of-natural-stone-make-your-home-shine"  class="btn btn-border-radius">Read More</a>
                                     </div>
                                   </div>
                                 <!-- post close -->
@@ -633,16 +651,22 @@
                                     <img class="card-img-top img-responsive" src="images/blogs/vsbsurfaces-blogpage-granite-exports-in-ongole-870x477.png" alt="Card image cap" idth="300"
                                     height="150">
                                     <div class="card-body">
-                                      <h5 class="card-title ">Granite exports in Ongole</h5>
-                                      <div class="post-metadata">
-                                        <span class="byline">
-                                            <i class="fa fa-user"></i>
-                                            <a href="#">Vsb Group</a>
-                                        </span>
-                                                                             
-                                    </div>
-                                      <p class="card-text">Granite exports in Ongole Granite exports from Ongole have been a cornerstone of the local economy for many years. With its unique VSB Surface, granite quarries in and around Ongole </p>
-                                      <a href="./granite-exports-in-ongole" class="btn btn-primary" style="margin-top: 15px;"><i class="fa fa-hand-o-right"></i>Read More</a>
+                                        <div class="post-metadata">
+                                            <span class="byline">
+                                                <i class="fa fa-user"></i>
+                                                <a href="#">Vsb Group</a>
+                                            </span>
+                                            <span class="byline">
+                                                <i class="fa fa-tag fa-flip-horizontal"></i>
+                                                <a href="#">Quartz</a>
+                                            </span>
+                                            <span class="byline">
+                                                <a href="#">Adrian White</a>
+                                            </span>                                  
+                                        </div>
+                                        <h5 class="card-title ">Granite exports in Ongole</h5>
+                                        <p class="card-text">Granite exports in Ongole Granite exports from Ongole have been a cornerstone of the local economy for many years. With its unique VSB Surface, granite quarries in and around Ongole </p>
+                                        <a href="./granite-exports-in-ongole"  class="btn btn-border-radius">Read More</a>
                                     </div>
                                   </div>
                                 <!-- post close -->
@@ -653,38 +677,44 @@
                                     <img class="card-img-top img-responsive" src="images/blogs/vsbsurfaces-blogpage-top-ten-granites-870x477.png" alt="Card image cap" idth="300"
                                     height="150">
                                     <div class="card-body">
-                                      <h5 class="card-title">Indian granite colours 10+ types from VSB surfaces</h5>
-                                      <div class="post-metadata">
-                                        <span class="byline">
-                                            <i class="fa fa-user"></i>
-                                            <a href="#">Vsb Group</a>
-                                        </span>
-                                                                             
-                                    </div>
-                                      <p class="card-text">ince the 1980s, granite has been the material of choice for countertops in both bathrooms and kitchens. In the next decades, granite has played a significant role in global </p>
-                                      <a href="./indian-granite-colours-top-ten-types-from-vsb-surfaces" class="btn btn-primary"><i class="fa fa-hand-o-right"></i>Read More</a>
-                                    </div>
+                                        <div class="post-metadata">
+                                            <span class="byline">
+                                                <i class="fa fa-user"></i>
+                                                <a href="#">Vsb Group</a>
+                                            </span>
+                                            <span class="byline">
+                                                <i class="fa fa-tag fa-flip-horizontal"></i>
+                                                <a href="#">Quartz</a>
+                                            </span>
+                                            <span class="byline">
+                                                <a href="#">Adrian White</a>
+                                            </span>                                  
+                                        </div>
+                                        <h5 class="card-title">Indian granite colours 10+ types from VSB surfaces</h5>
+                                        <p class="card-text">ince the 1980s, granite has been the material of choice for countertops in both bathrooms and kitchens. In the next decades, granite has played a significant role in global </p>
+                                        <a href="./indian-granite-colours-top-ten-types-from-vsb-surfaces" class="btn btn-border-radius">Read More</a>
+                                        </div>
                                   </div>
                                 <!-- post close -->
-                                </div>
-                               
-            
-            
-                                         
+                                </div>      
                             </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <a href="blog.html" class="btn btn-primary btn-small btn-radius">Read More Blogs <i class="fa fa-arrow-right fa-rotate-by fa-lg" style="margin-left: 10%; rotate: 315deg;"></i></a>
+                            </div>    
                         </div>
                     </div>
                 </div>        
             </section>
              <!-- section begin -->
-             <section id="section-cta">
-                <div class="sep-background-mask"></div>
+             <section class="home-contact-us" id="section-cta-1" style="background-image: url(./images/blogs/vsbsurfaces-blogpage-topbanner-1899x563.png);">
+                <!-- <div class="sep-background-mask"></div> -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="cal-to-action text-center">
-                                <span>Granite is our passion, and customer satisfaction is our mission. Contact VSB Granites for all your granite needs</span>
-                                <a href="contact" class="btn btn-border-light">Contact Us</a>
+                            <div class="cal-to-action">
+                                <h2 class="box-title text-center">Granite is our passion, and customer satisfaction is our mission.</h2>
+                                <span>Contact VSB Granites for all your granite needs</span>
+                                <a href="contact" class="btn btn-primary btn-radius">Connect With Us <i class="fa fa-phone" style="margin-left: 10%;"></i></a>
                             </div>                            
                         </div>
                     </div>

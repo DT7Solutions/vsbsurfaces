@@ -17,7 +17,11 @@
 
     <!-- color scheme -->
     <link rel="stylesheet" href="switcher/demo.css" type="text/css">
-    <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors">  
+    <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors"> 
+    
+    <!-- Custom CSS FILES -->    
+    <link href="css/chaitanya.css" rel="stylesheet" type="text/css">
+ 
     <style>
         @font-face {
             font-family: 'Magdelin Alt Regular';
@@ -46,16 +50,17 @@
         <header class="site-header-1 site-header">
             <!-- Main bar start -->
             <div id="sticked-menu" class="main-bar">
-                <div class="container">                
+                <div class="container-fluid">                
                     <div class="row">                    
                         <div class="col-md-12 " >
 
                             <!-- logo begin -->
                             <div id="logo" class="pull-left">                            
                                 <a href="./">
-                                    <img src="images/vsbsurfaces-logo-150x60.png" alt="" class="logo">
+                                    <img src="images/vsbsurfaces-header-logo-150x60.png" alt="" class="logo">
                                 </a>
                             </div>
+                            
                         
                             <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
                           
@@ -64,21 +69,28 @@
                             </nav>  
                            
                             <div >
-                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm" style="margin-left: 120px;">
-                                    <ul class="clearfix">
-                                        <li class="active" style="font-weight: bold;"><a href="./">Home</a></li>
-                                        <li><a href="./about" style="font-weight: bold;">About Us</a>
+                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm">
+                                    <ul class="clearfix1">
+                                        <!-- <li style="font-weight: bold;"><a class="active" href="./">Home</a></li> -->
+                                        <li><a class="active" href="./about" style="font-weight: bold;">About Us</a>
                                             <ul>
-                                                <li><a href="./aboutgranite" style="font-weight: bold;">Granite's</a></li>
-                                                <li><a href="./aboutquartz" style="font-weight: bold;">Quartz's</a></li>
-                                               
-                                                                                         
+                                                <li><a href="./about" style="font-weight: bold;">About VSB</a></li>
+                                                <li><a href="./aboutgranite" style="font-weight: bold;">About Granite's</a></li>
+                                                <li><a class="active" href="./aboutquartz" style="font-weight: bold;">About Quartz's</a></li>                                        
                                             </ul>
                                         </li>
                                         <li><a href="./natural-stone" style="font-weight: bold;">Natural Stone</a></li>
                                         <li><a href="./engineered-stone" style="font-weight: bold;">Engineered stone</a></li>
+                                    </ul>
+                                    <div id="logo">                            
+                                        <a href="./">
+                                            <img src="images/vsbsurfaces-header-logo-150x60.png" alt="Desktop Logo" class="logo1">
+                                        </a>
+                                    </div>
+                                    <ul class="clearfix2">
                                         <li><a href="./blog" style="font-weight: bold;">Blog</a></li>
-                                        <li><a href="./contact" style="font-weight: bold;">Contact</a></li>
+                                        <li><a href="./news-events" style="font-weight: bold;">News Events</a></li>
+                                        <li><a href="./contact" class="btn btn-primary btn-small btn-radius" style="font-weight: bold;">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -88,7 +100,7 @@
                                 <!-- Top Cart -->
                                 <div class="header-social-icons">
                                       <a href="https://www.facebook.com/vsbgroupind" class="facebook tipped" target="_blank" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
-                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
+                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="Instagram"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
                                       <a href="https://www.youtube.com/channel/UCDkMapMXyJcgVmsIV2Uf4rA" class="youtube tipped" target="_blank"  data-title="youtube"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-youtube-play"></i></a>
                                       <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin tipped" data-title="linkedin" target="_blank"   data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-linkedin"></i></a>
                                 </div>
@@ -103,296 +115,336 @@
         <!-- header close -->
 
 
- <!-- section begin -->
- <section id="section-about" class="bg-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <img src="images/about/vsbsurfaces-aboutquartzpage-570x390.png" alt="about image" class="img-responsive">
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="about-box">
-                    <h2 class="box-title">ENGINEERED STONE</h2>
-                    <div class="tiny-border"></div>
-                    <p>Quartz is harder than granite, very beautiful, and durable. Quartz countertops are relatively bactericidal and easy to keep</p>
-                    <ul class="list-style-1">
-                        <li>Durable and resistant to scratches and stains</li>
-                        <li>Low maintenance, non-porous, easy to clean</li>
-                        <li>Versatile in colors, patterns, shapes and sizes</li>
-                        <li>Eco-friendly, made from crushed stone and resin</li>
-                    </ul>
-                    <div class="divider-single"></div>
-                    <a href="./engineered-stone" class="btn btn-primary btn-small">View More</a>                                
-                </div>
-            </div>
-        </div>
-    </div>        
-</section>
-<!-- section close -->
-<div id="content">
-    <div class="container">
-        <div class="row"> 
-            <div class="col-md-12">
-                <div class="blog-single">
-                    <div class="post-entry">
-                       
-                        <blockquote><p>Welcome To VSB Quartz's 
-                        <cite class="box-title" style="color: #E16B3D">OUR WORK PROCESS</cite></p>
-                        
-                        </blockquote>  
-                        <p>Best Quartz manufactures Ongole, India . We have an Installed capacity to produce 70 container loads/ Month or Roughly 2,70,000 SFT / Month . We majorly produce slabs in 3cm thickness but depending on the need of the customer we have the flexibility to produce 20mm slabs too</p>  
-                       <p>Our molding line is automatic and is the latest version being offered by VEEGOO. The finished slabs measure 323cm x 162cm or 127 inch x 64 inch . The polishing happens on the latest Breton Polishing machine from Italy. We have so far produced more than 2100 slabs in this facility and exported close to 50 containers from our facility since its inception in November 2021</p> 
-                       <p>With the combination of skilled workforce and good machinery installed , we have been successful in producing slabs without bends , pits or any other issues. Our research and development wing has been successful in developing good colors matching with present trends in the Global markets. Moving forward, we are very positive that we will be able to develop a lot more colors in the near future.</p> 
-                       <p>This company belongs to VSB Group , a conglomerate which owns and runs Granite Quarries and Slab processing units in Ongole, Andhra Pradesh, India . Venkata Sri Balaji Exports is the name of our Granite slab manufacturing unit .</p>                                                               
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- quartz section -->
-
-    <!-- diff in quartz  -->
-
-    <section id="section-team" class="bg-grey" style="margin-bottom: 20px!important;">                
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h2>Quartz Difference</h2>                                
+        <!-- section begin -->
+        <section id="section-about">
+            <div class="container">
+                <div class="about-granite text-center">
+                    <div class="about-box">
+                        <h2 class="box-title">ENGINEERED STONE</h2>
                         <div class="tiny-border"></div>
+                        <p>
+                            Quartz is harder than granite, very beautiful, and durable. Quartz countertops 
+                            are relatively bactericidal and easy to keep
+                        </p>
+                        <div class="row about-granite-about">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="about-box">
+                                    <ul class="list-style-1">
+                                        <li>Durable and resistant to scratches and stains</li>
+                                        <li>Low maintenance, non-porous, easy to clean</li>
+                                    </ul>                        
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <img src="images/about/vsbsurfaces-aboutquartzpage-570x390.png" alt="about image" class="img-responsive">
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="about-box">
+                                    <ul class="list-style-1">
+                                        <li>Versatile in colors, patterns, shapes and sizes</li>
+                                        <li>Eco-friendly, made from crushed stone and resin</li>
+                                    </ul>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <a href="./engineered-stone" class="btn btn-primary btn-small btn-radius">View More 
+                                <i class="fa fa-arrow-right fa-rotate-by fa-lg" style="margin-left: 10%; rotate: 315deg;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-chain-broken"></i>
-                        <h3>Impact Resistance</h3>
-                        <p> Composed of natural quartz crystals and a resin binder, creating a hard, non-porous surface that can withstand heavy use and potential impacts</p>
+            </div>        
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-about" class="bg-grey">
+            <div class="container">
+                <div class="about-granite text-center">
+                    <div class="about-box">
+                        <h6>Welcome To VSB Quartz's</h6>
+                        <h2 class="box-title">OUR WORK PROCESS</h2>
+                        <div class="tiny-border"></div>
+                        <p>
+                            Best Quartz manufactures Ongole, India . We have an Installed capacity to produce 70 container 
+                            loads/ Month or Roughly 2,70,000 SFT / Month . We majorly produce slabs in 3cm thickness but 
+                            depending on the need of the customer we have the flexibility to produce 20mm slabs too
+                        </p>  
+                        <p>
+                            Our molding line is automatic and is the latest version being offered by VEEGOO. The finished 
+                            slabs measure 323cm x 162cm or 127 inch x 64 inch . The polishing happens on the latest Breton 
+                            Polishing machine from Italy. We have so far produced more than 2100 slabs in this facility and 
+                            exported close to 50 containers from our facility since its inception in November 2021
+                        </p> 
+                        <p>
+                            With the combination of skilled workforce and good machinery installed , we have been successful
+                            in producing slabs without bends , pits or any other issues. Our research and development wing 
+                            has been successful in developing good colors matching with present trends in the Global markets. 
+                            Moving forward, we are very positive that we will be able to develop a lot more colors in the near future.
+                        </p> 
+                        <p>
+                            This company belongs to VSB Group , a conglomerate which owns and runs Granite Quarries and Slab 
+                            processing units in Ongole, Andhra Pradesh, India . Venkata Sri Balaji Exports is the name of our 
+                            Granite slab manufacturing unit .
+                        </p>
                     </div>
-                   
                 </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-fire"></i>
-                        <h3>Heat Resistant</h3>
-                        <p>VSB Quartz is highly resistant to heat, making it suitable for kitchen countertops and other surfaces exposed to high temperatures.</p>
+            </div>        
+        </section>
+        <!-- section close -->
+
+        <!-- quartz section -->
+
+        <!-- diff in quartz  -->
+
+        <section id="section-team" class="bg-grey" style="margin-bottom: 20px!important;">                
+            <div class="container">
+                <div class="row" style="padding: 25px; background: #fff;">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h2 class="box-title">Quartz Difference</h2>                                
+                            <div class="tiny-border"></div>
+                        </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-chain-broken"></i>
+                            <h3>Impact Resistance</h3>
+                            <p>Composed of natural quartz crystals and a resin binder, creating a hard, non-porous surface that can withstand heavy use and potential impacts</p>
+                        </div>
                     
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-shield"></i>
-                        <h3>Durable</h3>
-                        <p>Highly durable and resistant to scratches, stains,  making it easy to clean and maintain, ideal for both residential and commercial use.</p>
                     </div>
-                  
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-object-group"></i>
-                        <h3>Limitless Desgin </h3>
-                        <p>Variety of colors, patterns, and finishes, allowing for limitless design possibilities that can enhance the aesthetic appeal of any space.</p>
-                    </div>
-                  
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-tint"></i>
-                        <h3>Stain Free</h3>
-                        <p>Non-porous and highly resistant to stains and discoloration, making it easy to clean and maintain.</p>
-                    </div>
-                  
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-bolt"></i>
-                        <h3>Scratch Resitant</h3>
-                        <p> Highly resistant to scratches and other forms of surface damage, making it a durable and long-lasting choice for high-traffic areas.</p>
-                    </div>
-                  
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fa fa-check-circle-o"></i>
-                        <h3>Hygienic</h3>
-                        <p>Non-porous and highly resistant to bacteria and other microorganisms, making it a hygienic choice for surfaces</p>
-                    </div>
-                  
-                </div>
-                
-                
-                
-            </div>
-        </div>        
-    </section>
-
-
-    <!-- end in diff in quartz -->
-
-    <section class="shortcodes section-elements">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 business">
-                    <blockquote><p>
-                        <cite class="box-title" style="color: #E16B3D">Quartz</cite></p>
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-fire"></i>
+                            <h3>Heat Resistant</h3>
+                            <p>VSB Quartz is highly resistant to heat, making it suitable for kitchen countertops and other surfaces exposed to high temperatures.</p>
+                        </div>
                         
-                        </blockquote>  
-                    <p>Prepare for the majestic beauty brought to your spaces by our collection of Engineered Quartz. This is a highly dense product and very close to natural granite. Engineered Quartz is resistant to stains, scratches, and cracks, it is impervious to heat and cold. This supreme material requires minimal maintenance.</p>
-                    <div class="spacing-30"></div>
-                    <div class="accordion">                                
-                        <div class="accordion_in acc_active">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i> 1. Procurement</div>
-                            <div class="acc_content">
-                                <p>The raw materials required for slab production from over 400+ suppliers across the world. Want to be our preferred partners please email to us at operations@vsbquartz.com</p>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-shield"></i>
+                            <h3>Durable</h3>
+                            <p>Highly durable and resistant to scratches, stains,  making it easy to clean and maintain, ideal for both residential and commercial use.</p>
                         </div>
-
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i>2. Raw Material Screening & Testing</div>
-                            <div class="acc_content">
-                                <p>All the raw materials are tested in our laboratory and grounded as per product parameters.</p>
-                            </div>
-                        </div>
-                                    
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i>3. Batching & Mixing</div>
-                            <div class="acc_content">
-                                <p>The raw materials required for production are loaded into temporary storage units and are grinded to the mixing platform through an automatic convert system. Our process is completely computerized hence accurate.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i>4. Pressing and Heating</div>
-                            <div class="acc_content">
-                                <p>The material mixture is spread by a distribution system and is subjected to a pressure of about 9000 psi to form a solid cake. This cake is then heated and subsequently cooled. This facilitates the binding of powdered quartz with organic resins to form a solid surface.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i>5. Calibration And Polishing</div>
-                            <div class="acc_content">
-                                <p>The solid cakes are subjected calibration on both sides, trimmed to perfection and polished on our Breton polishing line.</p>
-                            </div>
-                        </div>
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i> 6. Quality Inspection</div>
-                            <div class="acc_content">
-                                <p>After the slabs are polished they are inspected thoroughly by our quality experts team and grounded accordingly.</p>
-                            </div>
-                        </div>
-
-                       
-
-                        <div class="accordion_in">
-                            <div class="acc_head"><i class="fa fa-question-circle"></i> 7. Packing and Printing</div>
-                            <div class="acc_content">
-                                <p>Each and every slab is wrapped with polyethene protection to safeguard it from scratches while handling custom labelling and color names are printed at the back of the slabs before they are packed in wooded crates for exports.</p>
-                            </div>
-                        </div>
-                                        
-                    </div>  
-                </div>
-                <div class="col-md-6 col-sm-6 business">
                     
-                    <div class="project-slider">
-                        <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutquartzpage-slider-555x433.png" class="img-responsive"></div>
-                        <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutquartzpage-slider-two-555x433.png" class="img-responsive"></div>
-                        <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutquartzpage-slider-three-555x433.png" class="img-responsive"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-     </section>
-
-
-
-
- <!-- footer begin -->
- <footer class="footer-1 bg-color-1">
-
-    <!-- main footer begin -->
-    <div class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="compact-widget">                                                
-                        <div class="widget-inner">
-                            <img class="logo-footer" src="images/vsbsurfaces-footer-logo-150x60.png" alt="compact company">
-                            <div class="widget-inner">
-                                <p>VSB Group is an exporter and distributor of the finest natural and engineered stones in India. We work with some of the top talents in the country to provide you with the best selection of the highest quality natural stone available.</p>
-                            </div>
-                            <div class="social-icons clearfix">
-                                <a href="https://www.facebook.com/vsbgroupind"  class="facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/vsbgroupind/" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UCDkMapMXyJcgVmsIV2Uf4rA" class="youtube" target="_blank" ><i class="fa fa-youtube-play"></i></a>
-                                <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin" target="_blank" ><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>    
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-object-group"></i>
+                            <h3>Limitless Desgin </h3>
+                            <p>Variety of colors, patterns, and finishes, allowing for limitless design possibilities that can enhance the aesthetic appeal of any space.</p>
+                        </div>
+                    
                     </div>
-                </div>
-                <div class="col-md-3 ">
-                    <div class="compact-widget">
-                        <h3 class="widget-title">Features</h3> 
-                        <div class="widget-inner">
-                            <ul>
-                                <li><a href="./terms-and-conditions">Term &amp; Conditions</a></li>
-                                <li><a href="./privacypolicy">Privacy Policy</a></li>
-                                <li><a href="#">CSR Policy</a></li>
-                            </ul>
-                        </div>                                                   
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-tint"></i>
+                            <h3>Stain Free</h3>
+                            <p>Non-porous and highly resistant to stains and discoloration, making it easy to clean and maintain.</p>
+                        </div>
+                    
                     </div>
-                </div>
-                <div class="col-md-3 ">
-                    <div class="compact-widget">
-                        <h3 class="widget-title">Quick Links</h3> 
-                        <div class="widget-inner">
-                            <ul>
-                                <li><a href="./" target="_blank">Home</a></li>
-                                <li><a href="./about" target="_blank">About us</a></li>
-                                <li><a href="./natural-stone">Natural Stone</a></li>
-                                <li><a href="./engineered-stone">Engineered Stone</a></li>
-                              
-                                <li><a href="./blog" target="_blank">Blog</a></li>
-                                <li><a href="./contact" target="_blank">Contact</a></li>
-                            </ul>
-                        </div>                                                   
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-bolt"></i>
+                            <h3>Scratch Resitant</h3>
+                            <p> Highly resistant to scratches and other forms of surface damage, making it a durable and long-lasting choice for high-traffic areas.</p>
+                        </div>
+                    
                     </div>
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-check-circle-o"></i>
+                            <h3>Hygienic</h3>
+                            <p>Non-porous and highly resistant to bacteria and other microorganisms, making it a hygienic choice for surfaces</p>
+                        </div>
+                    
+                    </div> 
                 </div>
-                
-                <div class="col-md-3 ">
-                    <div class="compact-widget">
-                        <h3 class="widget-title">Contact</h3>
-                        <div class="widget-inner">
-                            <p>Address: Gundlapalli (vill) , Maddipadu (Mdl) , Prakasam (Dist) , Andhrapradesh , India 523211</p>
-                            <p><a  style="color:#999999;text-decoration: none; " href="tel:+91988-524-2459">Phone:  988-524-2459</a></p>
-                            <p><a  style="color: #999 !important;;text-decoration: none; " href="mailto:info@vsbsurfaces.com">Email: info@vsbsurfaces.com</a></p>
+
+                <div class="row business" style="padding: 25px; background: #fff;">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="project-slider">
+                            <div class="item"><img alt="" src="images/aboutgranite/vsbsurfaces-aboutgranitepage-granite-three-555x433.png" class="img-responsive"></div>
+                            <div class="item"><img alt="" src="images/aboutgranite/vsbsurfaces-aboutgranitepage-granite-three-555x433.png" class="img-responsive"></div>
+                            <div class="item"><img alt="" src="images/aboutgranite/vsbsurfaces-aboutgranitepage-granite-two-555x433.png" class="img-responsive"></div>
+                            <div class="item"><img alt="" src="images/aboutgranite/vsbsurfaces-aboutgranitepage-granite-three-555x433.png" class="img-responsive"></div>
+                            <div class="item"><img alt="" src="images/aboutgranite/vsbsurfaces-aboutgranitepage-granite-one-555x433.png" class="img-responsive"></div>
                         </div>
                     </div>
                 </div>
 
-              
-               
+            </div>        
+        </section>
 
-            </div>
-        </div>
-    </div>            
-    <!-- main footer close -->
 
-    <!-- sub footer begin -->
-    <div class="sub-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    Copyright &copy; 2023 vsbsurfaces. All rights reserved | Designed By <a href="https://dt7solutions.com/" target="_blank" style="color: rgb(206, 203, 203);">DT7Solutions.com</a>
+        <!-- end in diff in quartz -->
+
+        <section class="shortcodes section-elements bg-grey">
+            <div class="container">
+                <div class="row" style="padding: 25px; background: #fff;">
+                    <div class="about-granite text-center">
+                        <div class="about-box">
+                            <h2 class="box-title">Quartz</h2>
+                            <div class="tiny-border"></div>
+ 
+                            <p>
+                                Prepare for the majestic beauty brought to your spaces by our collection of Engineered Quartz. 
+                                This is a highly dense product and very close to natural granite. Engineered Quartz is resistant 
+                                to stains, scratches, and cracks, it is impervious to heat and cold. This supreme material 
+                                requires minimal maintenance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="accordion">                                
+                            <div class="accordion_in acc_active">
+                                <div class="acc_head">01/ Procurement</div>
+                                <div class="acc_content">
+                                    <p>The raw materials required for slab production from over 400+ suppliers across the world. Want to be our preferred partners please email to us at operations@vsbquartz.com</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_in">
+                                <div class="acc_head">02/ Raw Material Screening & Testing</div>
+                                <div class="acc_content">
+                                    <p>All the raw materials are tested in our laboratory and grounded as per product parameters.</p>
+                                </div>
+                            </div>
+                                        
+                            <div class="accordion_in">
+                                <div class="acc_head">03/ Batching & Mixing</div>
+                                <div class="acc_content">
+                                    <p>The raw materials required for production are loaded into temporary storage units and are grinded to the mixing platform through an automatic convert system. Our process is completely computerized hence accurate.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_in">
+                                <div class="acc_head">04/ Pressing and Heating</div>
+                                <div class="acc_content">
+                                    <p>The material mixture is spread by a distribution system and is subjected to a pressure of about 9000 psi to form a solid cake. This cake is then heated and subsequently cooled. This facilitates the binding of powdered quartz with organic resins to form a solid surface.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_in">
+                                <div class="acc_head">05/ Calibration And Polishing</div>
+                                <div class="acc_content">
+                                    <p>The solid cakes are subjected calibration on both sides, trimmed to perfection and polished on our Breton polishing line.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_in">
+                                <div class="acc_head"> 06/ Quality Inspection</div>
+                                <div class="acc_content">
+                                    <p>After the slabs are polished they are inspected thoroughly by our quality experts team and grounded accordingly.</p>
+                                </div>
+                            </div>
+
+                        
+
+                            <div class="accordion_in">
+                                <div class="acc_head"> 07/ Packing and Printing</div>
+                                <div class="acc_content">
+                                    <p>Each and every slab is wrapped with polyethene protection to safeguard it from scratches while handling custom labelling and color names are printed at the back of the slabs before they are packed in wooded crates for exports.</p>
+                                </div>
+                            </div>
+                                            
+                        </div>  
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- sub footer close -->
+        </section>
 
-</footer>
-<!-- footer close -->      
+
+
+
+        <!-- footer begin -->
+        <footer class="footer-1 bg-color-1">
+
+            <!-- main footer begin -->
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="compact-widget">                                                
+                                <div class="widget-inner">
+                                    <img class="logo-footer" src="images/vsbsurfaces-footer-logo-150x60.png" alt="compact company">
+                                    <div class="widget-inner">
+                                        <p>VSB Group is an exporter and distributor of the finest natural and engineered stones in India. We work with some of the top talents in the country to provide you with the best selection of the highest quality natural stone available.</p>
+                                    </div>
+                                    <div class="social-icons clearfix">
+                                        <a href="https://www.facebook.com/vsbgroupind"  class="facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/vsbgroupind/" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCDkMapMXyJcgVmsIV2Uf4rA" class="youtube" target="_blank" ><i class="fa fa-youtube-play"></i></a>
+                                        <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin" target="_blank" ><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Features</h3> 
+                                <div class="widget-inner">
+                                    <ul>
+                                        <li><a href="./terms-and-conditions">Term &amp; Conditions</a></li>
+                                        <li><a href="./privacypolicy">Privacy Policy</a></li>
+                                        <li><a href="#">CSR Policy</a></li>
+                                    </ul>
+                                </div>                                                   
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Quick Links</h3> 
+                                <div class="widget-inner">
+                                    <ul>
+                                        <li><a href="./" target="_blank">Home</a></li>
+                                        <li><a href="./about" target="_blank">About us</a></li>
+                                        <li><a href="./natural-stone">Natural Stone</a></li>
+                                        <li><a href="./engineered-stone">Engineered Stone</a></li>
+                                    
+                                        <li><a href="./blog" target="_blank">Blog</a></li>
+                                        <li><a href="./contact" target="_blank">Contact</a></li>
+                                    </ul>
+                                </div>                                                   
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 ">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Contact</h3>
+                                <div class="widget-inner">
+                                    <p>Address: Gundlapalli (vill) , Maddipadu (Mdl) , Prakasam (Dist) , Andhrapradesh , India 523211</p>
+                                    <p><a  style="color:#999999;text-decoration: none; " href="tel:+91988-524-2459">Phone:  988-524-2459</a></p>
+                                    <p><a  style="color: #999 !important;;text-decoration: none; " href="mailto:info@vsbsurfaces.com">Email: info@vsbsurfaces.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    
+
+                    </div>
+                </div>
+            </div>            
+            <!-- main footer close -->
+
+            <!-- sub footer begin -->
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            Copyright &copy; 2023 vsbsurfaces. All rights reserved | Designed By <a href="https://dt7solutions.com/" target="_blank" style="color: rgb(206, 203, 203);">DT7Solutions.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sub footer close -->
+
+        </footer>
+        <!-- footer close -->      
 
     </div>
     

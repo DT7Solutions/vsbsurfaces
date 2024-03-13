@@ -17,7 +17,11 @@
 
     <!-- color scheme -->
     <link rel="stylesheet" href="switcher/demo.css" type="text/css">
-    <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors">  
+    <link rel="stylesheet" href="switcher/colors/blue.css" type="text/css" id="colors"> 
+    
+    <!-- Custom CSS FILES -->    
+    <link href="css/chaitanya.css" rel="stylesheet" type="text/css">
+    
     <style>
         @font-face {
             font-family: 'Magdelin Alt Regular';
@@ -41,43 +45,51 @@
     
     <div id="wrapper">
 
-         <!-- header begin -->
-         <header class="site-header-1 site-header">
+        <!-- header begin -->
+        <header class="site-header-1 site-header">
             <!-- Main bar start -->
             <div id="sticked-menu" class="main-bar">
-                <div class="container">                
+                <div class="container-fluid">                
                     <div class="row">                    
-                        <div class="col-md-12 ">
+                        <div class="col-md-12 " >
 
                             <!-- logo begin -->
                             <div id="logo" class="pull-left">                            
                                 <a href="./">
-                                    <img src="images/vsbsurfaces-logo-150x60.png" alt="" class="logo">
+                                    <img src="images/vsbsurfaces-header-logo-150x60.png" alt="" class="logo">
                                 </a>
                             </div>
+                            
                         
                             <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
                           
-                            <nav id="mobile-menu" class="site-mobile-menu hidden-lg hidden-md">
+                            <nav id="mobile-menu" class="site-mobile-menu   hidden-lg hidden-md">
                                 <ul></ul>
                             </nav>  
                            
-                            <div>
-                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm" style="margin-left: 120px;">
-                                    <ul class="clearfix">
-                                        <li  style="font-weight: bold;"><a href="./">Home</a></li>
-                                        <li ><a href="./about" class="active" style="font-weight: bold;">About Us</a>
+                            <div >
+                                <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm">
+                                    <ul class="clearfix1">
+                                        <!-- <li style="font-weight: bold;"><a class="active" href="./">Home</a></li> -->
+                                        <li><a class="active" href="./about" style="font-weight: bold;">About Us</a>
                                             <ul>
-                                                <li><a href="./aboutgranite" style="font-weight: bold;">Granite's</a></li>
-                                                <li><a href="./aboutquartz" style="font-weight: bold;">Quartz's</a></li>
-                                               
-                                                                                         
+                                                <li><a class="active" href="./about" style="font-weight: bold;">About VSB</a></li>
+                                                <li><a href="./aboutgranite" style="font-weight: bold;">About Granite's</a></li>
+                                                <li><a href="./aboutquartz" style="font-weight: bold;">About Quartz's</a></li>                                        
                                             </ul>
                                         </li>
                                         <li><a href="./natural-stone" style="font-weight: bold;">Natural Stone</a></li>
                                         <li><a href="./engineered-stone" style="font-weight: bold;">Engineered stone</a></li>
+                                    </ul>
+                                    <div id="logo">                            
+                                        <a href="./">
+                                            <img src="images/vsbsurfaces-header-logo-150x60.png" alt="Desktop Logo" class="logo1">
+                                        </a>
+                                    </div>
+                                    <ul class="clearfix2">
                                         <li><a href="./blog" style="font-weight: bold;">Blog</a></li>
-                                        <li><a href="./contact" style="font-weight: bold;">Contact</a></li>
+                                        <li><a href="./news-events" style="font-weight: bold;">News Events</a></li>
+                                        <li><a href="./contact" class="btn btn-primary btn-small btn-radius" style="font-weight: bold;">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -87,7 +99,7 @@
                                 <!-- Top Cart -->
                                 <div class="header-social-icons">
                                       <a href="https://www.facebook.com/vsbgroupind" class="facebook tipped" target="_blank" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
-                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
+                                      <a href="https://www.instagram.com/vsbgroupind/" class="twitter tipped" target="_blank" data-title="Instagram"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-instagram"></i></a>
                                       <a href="https://www.youtube.com/channel/UCDkMapMXyJcgVmsIV2Uf4rA" class="youtube tipped" target="_blank"  data-title="youtube"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-youtube-play"></i></a>
                                       <a href="https://www.linkedin.com/company/vsbgroupind/" class="linkedin tipped" data-title="linkedin" target="_blank"   data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-linkedin"></i></a>
                                 </div>
@@ -133,7 +145,7 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-about" class="margin-top-80">                
+            <section id="section-about" class="margin-top-80" style="display: none;">                
                 <div class="container">
                     <div class="row">                        
                         <div class="col-md-4">
@@ -192,7 +204,7 @@
                 </div>        
             </section> -->
             <!-- section close -->
-            <section id="section-project" class="no-padding-top">
+            <section id="section-project" class="no-padding-top" style="display: none;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-offset-1">
@@ -222,16 +234,85 @@
                 </div>
             </section>
 
-
-            <section class="shortcodes section-elements">
+            <section id="section-about" class="margin-top-80">                
+                <div class="container">
+                    <div class="row about-us">                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="about-content">
+                                <h5 class="box-title">We are Vsb</h5> 
+                                <p>
+                                    VSB Group is an Exporter of the finest quality Natural and Engineered Stone to the world. 
+                                    Our VSB Group aims to provide the highest quality products. Our company works with international 
+                                    standards. Our VSB Group is at the forefront of providing exceptional services, 
+                                    standard quality, and comprehensive products.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="project-slider">
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-857x437.png"   class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company- two-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-three-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-four-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-five-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-six-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-seven-857x437.png"  class="img-responsive"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-us">
+                        <div class="col-lg-6 col-md-6 order-md-2">
+                            <div class="project-slider">
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-857x437.png"   class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company- two-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-three-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-four-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-five-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-six-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-seven-857x437.png"  class="img-responsive"></div>
+                            </div>
+                        </div>                        
+                        <div class="col-lg-6 col-md-6 order-md-1">
+                            <div class="about-content">
+                                <h5 class="box-title">What We Do?</h5>
+                                <p>
+                                    VSB Group is an Indian company and one of the largest exporters of Natural and Engineered Stone from India.
+                                    Speaking about Natural Stone, our team is specialized in procuring rough blocks, processing slabs, 
+                                    and catering to the cut-to-size requirements of our clients in various thicknesses and sizes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-us">                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="about-content">
+                                <h5 class="box-title">Why Choose Us?</h5>
+                                <p>
+                                    We are dedicated to offering unparalleled quality and service using the latest manufacturing technology,
+                                     to make spaces attractive, according to your likeness!.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="project-slider">
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-857x437.png"   class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company- two-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-three-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-four-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-five-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-six-857x437.png"  class="img-responsive"></div>
+                                <div class="item"><img alt="" src="images/about/vsbsurfaces-aboutpage-company-seven-857x437.png"  class="img-responsive"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+            <!-- <section class="shortcodes section-elements">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                           
                             <div class="spacing-30"></div>
                         </div>
-                       
-
                         <div class="col-md-6">
                             <div class="tabs tabs-4" data-active="1">
                                 <header>
@@ -264,23 +345,38 @@
 
                             </div>
                         </div>
-
-                       
-
+                    </div>
+                </div>        
+            </section> -->
+            <section class="shortcodes section-elements">
+                <div class="container">
+                    <div class="vision-mision row">
+                        <div class="col-md-6">
+                            <img src="images/about/vsbsurfaces-aboutquartzpage-slider-555x433.png" alt="vsbsurfaces-aboutquartzpage-slider-555x433"class="img-responsive">
+                            <div class="our-vision-mision">
+                                <h4>Our Vision</h4>
+                                <p>We envision ourselves to be a key global conglomerate, with a clear focus on delivering high-quality Building materials to the world.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/about/vsbsurfaces-aboutquartzpage-slider-three-555x433.png" alt="vsbsurfaces-aboutquartzpage-slider-three-555x433" class="img-responsive">
+                            <div class="our-vision-mision">
+                                <h4>Our Mission</h4>
+                                <p>Our mision goes beyond the production and sale of surfaces; we aim to provide superior value to our customers, stakeholders, and society on a large.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>        
             </section> 
              <!-- section begin -->
-             <section id="section-team" class="bg-grey">                
+             <section id="section-team" class="bg-white">                
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <h2>Our Values</h2>                                
-                                <div class="tiny-border"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
+                    <div class="text-center">
+                        <h2 class="box-title">Our Values</h2>                                
+                        <div class="tiny-border"></div>
+                    </div>
+                    <div class="our-values row">
+                        <div class="col-lg-4 col-md-4">
                             <div class="feature">
                                 <i class="fa  fa-lightbulb-o"></i>
                                 <h3>Integrity</h3>
@@ -288,7 +384,7 @@
                             </div>
                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="feature">
                                 <i class="fa  fa-sitemap"></i>
                                 <h3>Commitment</h3>
@@ -296,7 +392,7 @@
                             </div>
                             
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="feature">
                                 <i class="fa fa-bullseye"></i>
                                 <h3>Seamlessness</h3>
@@ -304,7 +400,7 @@
                             </div>
                           
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="feature">
                                 <i class="fa fa-bullhorn"></i>
                                 <h3>Speed</h3>
@@ -312,7 +408,7 @@
                             </div>
                           
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="feature">
                                 <i class="fa fa-suitcase"></i>
                                 <h3>Passion</h3>
@@ -328,7 +424,7 @@
             <!-- section close -->    
 
             <!-- Related Project begin -->
-            <section id="section-related-project" >
+            <section id="section-related-project" style="background-color: #F8F7F7;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -417,62 +513,56 @@
            
 
             
-
-           <!-- section begin -->
-            <section id="section-testimonial">
+            <!-- section begin -->
+            <section id="section-testimonial" style="background-color: #ffffff;">
                 <div class="container">
+                    <div class="text-center">
+                        <h2 class="box-title">Testimonials</h2>                                
+                        <div class="tiny-border"></div>
+                    </div>
                     <div class="row">                        
-                        <div class="col-md-6 col-md-offset-3">
+                        <div class="col-md-12 testimonials">
                             <div class="testimonials-slider-wrapper">
-                                <div class="text-center">
-                                    <h2>Testimonials</h2>                                
-                                    <div class="tiny-border"></div>
-                                </div>
                                 
-                                <div class="testimonials-slider-2 text-center">
+                                <div class="testimonials-slider text-center">
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular;">
+                                                Good managmnet and terriffic Managing Director
+                                            </blockquote>
                                             <div class="testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-seven-50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Shetty Shivalingappa</span>
-                                                    
                                                 </div>
                                             </div>
-                                            <blockquote>
-                                                Good managmnet and terriffic Managing Director
-                                            </blockquote>
                                             
                                         </div>   
                                     </div>
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular; text-transform:lowercase">
+                                                SUPERB . NYC. A LOF OF SPACE FOR PARKING . NEAT MAINTENANCE. NYCE STAFF
+                                            </blockquote>
                                             <div class=" testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-eight--50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Sohail Ahmed Syed</span>
-                                                   
                                                 </div>
                                             </div>
-                                            <blockquote>
-                                                SUPERB . NYC. A LOF OF SPACE FOR PARKING . NEAT MAINTENANCE. NYCE STAFF
-                                            </blockquote>
-                                            
                                         </div> 
                                     </div>
                                     <div class="item">
                                         <div class="testi-boxes">
+                                            <blockquote style="font-family:Magdelin Alt regular;">
+                                                excellent and we'll organized and professionals with good experience 👍 …
+                                            </blockquote>
                                             <div class="testi-info clearfix">
                                                 <img alt="" src="images/about/vsbsurfaces-aboutpage-googlereviews-three-50x50.png" class="img-circle">
                                                 <div class="testi-details">
                                                     <span>Tanveer Ahmed</span>
-                                                  
                                                 </div>
                                             </div>
-                                            <blockquote>
-                                                excellent and we'll organized and professionals with good experience 👍 …
-                                            </blockquote>
-                                            
                                         </div> 
                                     </div>
                                 </div>
@@ -483,15 +573,16 @@
             </section>
             <!-- section close -->
 
-            <!-- section begin -->
-            <section id="section-cta">
-                <div class="sep-background-mask"></div>
+             <!-- section begin -->
+             <section class="about-contact-us" id="section-cta-1" style="background-image: url(./images/blogs/vsbsurfaces-blogpage-topbanner-1899x563.png);">
+                <!-- <div class="sep-background-mask"></div> -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="cal-to-action text-center">
-                                <span>Granite is our passion, and customer satisfaction is our mission. Contact VSB Granites for all your granite needs</span>
-                                <a href="contact.html" class="btn btn-border-light">Contact Us</a>
+                            <div class="cal-to-action">
+                                <h2 class="box-title text-center">Granite is our passion, and customer satisfaction is our mission.</h2>
+                                <span>Contact VSB Granites for all your granite needs</span>
+                                <a href="contact" class="btn btn-primary btn-radius">Connect With Us <i class="fa fa-phone" style="margin-left: 10%;"></i></a>
                             </div>                            
                         </div>
                     </div>
@@ -610,6 +701,7 @@
     <script src="js/sticky.min.js"></script>
     <script src="js/compact.js"></script>  
     <script src="js/about.js"></script> 
+    <script src="js/custom-index1.js"></script>
     <script type="text/javascript" src="js/visible.min.js"></script>
     <script type="text/javascript" src="js/pro-bars.js"></script> 
     <script type="text/javascript">
