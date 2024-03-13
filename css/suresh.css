@@ -279,7 +279,7 @@
     width: 92%;
     padding: 20px;
     text-align: center;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
     color: #459cd6 !important;
     overflow: hidden;
     /* transition: 3s !important; */
@@ -312,7 +312,7 @@
     width: 92%;
     padding: 15px;
     text-align: center;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
     display: block;
     overflow: hidden;
 }
@@ -347,12 +347,7 @@ footer .main-footer .widget-inner ul {
     align-items: center !important;
 } */
 
-nav.site-desktop-menu {
-    width: auto;
-    float: left;
-    margin-top: 0px;
-    margin-left: 60px !important;
-  }
+
 
   .last-cards{
     margin: auto !important;

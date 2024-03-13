@@ -29,8 +29,6 @@ nav.site-desktop-menu > ul > li > a {
     text-decoration: none;
     font-size: 15px;
     color: #ffffff;
-    -webkit-transition: .5s;
-    transition: .5s;
     font-family: "Magdelin Alt regular" !important;
 }
 nav.site-desktop-menu {
@@ -75,9 +73,9 @@ nav.site-desktop-menu > .clearfix2 {
 nav.site-desktop-menu > ul > li > ul {
     position: absolute;
     top: 55px;
-    left: -50px;
+    left: 5px;
     background-color: #042433;
-    width: 200px;
+    width: 150px;
     border-top-width: 3px;
     border-top-style: solid;
     border-color: #28b7f9;
@@ -88,10 +86,22 @@ nav.site-desktop-menu > ul > li > ul {
     list-style: none;
     text-align: left;
 }
-nav.site-desktop-menu > ul > li > a.active{
+nav.site-desktop-menu > ul > li > ul a {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding: 0px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+nav.site-desktop-menu > ul > li > a.active,
+nav.site-desktop-menu > ul > li > a.active:hover{
   color: #E16B3D!important;
 }
-nav.site-desktop-menu > ul > li > ul > li > a.active{
+nav.site-desktop-menu > ul > li > ul > li > a.active,
+nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     color: #E16B3D!important;
   }
 .title, .box-title{
@@ -495,8 +505,13 @@ nav.site-desktop-menu > ul > li > ul > li > a.active{
   }
 
 
-
-
+.clearfix2 .btn-primary:hover {
+    background-color: #2C3E50 !important;
+    color: #459CD6 !important;
+}
+.clearfix2 .btn-primary {
+    background-color: #459CD6 !important;
+}
 .btn-border-radius{
     border: 2px solid #3084C0;
     color: #1c1c1c;
@@ -519,6 +534,11 @@ nav.site-desktop-menu > ul > li > ul > li > a.active{
     nav.site-mobile-menu > ul > li a{
         text-align: start;
         background: transparent;
+    }
+    nav.site-mobile-menu > ul > li .btn-primary{
+        background-color: transparent !important;
+        color: #ffffff;
+        border: 0px ;
     }
     .home-img{
         margin: 5% 0%;

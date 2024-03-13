@@ -14,11 +14,17 @@ jQuery(document).ready(function() {
         $(".tipped").tipper();
     }); 
     
+    // $(window).width();
+    // $("nav.site-desktop-menu > ul li").hover(function() {
+    //     $(this).find("> ul").stop(true, true).slideDown(200)
+    // }, function() {
+    //     $(this).find("> ul").stop(true, true).slideUp(200)
+    // });
     $(window).width();
     $("nav.site-desktop-menu > ul li").hover(function() {
-        $(this).find("> ul").stop(true, true).slideDown(200)
+        $(this).find("> ul").stop(true, true).slideDown(55)
     }, function() {
-        $(this).find("> ul").stop(true, true).slideUp(200)
+        $(this).find("> ul").stop(true, true).slideUp(55)
     });
 
     $("#desktop-menu > ul").children().clone().appendTo($("#mobile-menu > ul")), $("#show-mobile-menu").on("click", function() {

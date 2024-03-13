@@ -126,11 +126,11 @@ nav.site-desktop-menu > ul > li > a {
   text-decoration: none;
   font-size: 15px;
   color: #555555;
-  -o-transition: .5s;
+  /* -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
-  transition: .5s;
+  transition: .5s; */
 }
 nav.site-desktop-menu > ul > li > a:hover {
   color: #28b7f9;
@@ -171,11 +171,12 @@ nav.site-desktop-menu > ul > li > ul a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
-  -o-transition: .5s;
+  /* -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
-  transition: .5s;
+  transition: .5s; */
+  transition: none !important;
   display: block;
   font-size: 13px;
 }
