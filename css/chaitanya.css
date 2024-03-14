@@ -234,6 +234,7 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+    text-align: justify;
 }
 .home-blog .card .btn{
     position: absolute;
@@ -284,7 +285,9 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     font-weight: 900;
 }
 .cal-to-action a{
+    background-color: #ffffff;
     margin: 5% 0%;
+    color: #0c0c0c !important;
 }
 
 .section-about{
@@ -375,7 +378,8 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     color: #3084C0;
 }
 .about-box p{
-    margin: 2% 15%;
+    /* text-align: justify;  */
+    /* margin: 2% 15%; */
 }
 .about-granite-about{
     display: flex;

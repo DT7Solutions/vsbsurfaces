@@ -18,6 +18,52 @@
 }
 
 
+/* ============================================== Home Page =========================== */
+
+.about-box p{
+    text-align: justify; 
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .about-box p{
+        text-align: justify; 
+    }
+    .latest-projects .latest-projects-intro p{
+        text-align: justify;
+    }
+}
+    
+
+
+/* ====================================== About Page ==================================== */
+.about-content p{
+    text-align:justify !important;
+}
+.feature p{
+    text-align: justify;
+}
+.our-vision-mision p{
+    text-align: justify;
+}
+.engineered-text{
+    text-align: center !important;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .about-content p{
+        text-align:justify !important;
+    }
+    .feature p{
+        text-align: justify;
+    }
+    .our-vision-mision p{
+        text-align: justify;
+    }
+}
+
+
+
+
 /* ==================================contact page ===================================== */
 .service-details{
     margin: auto;
@@ -118,6 +164,14 @@
 
 
 /* ==========================================================blogs page ============================================== */
+.post-entry p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
 
 .form-title-head{
     margin-bottom: 40px;
@@ -374,7 +428,9 @@ footer .main-footer .widget-inner ul {
   }
 
   /* ====================================== Footer Page =================================== */
-
+.widget-inner p{
+    text-align:justify !important;
+}
   .foter-all-rights{
     display: flex;
     justify-content: space-between;
