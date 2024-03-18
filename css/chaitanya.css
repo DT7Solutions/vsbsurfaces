@@ -426,7 +426,7 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
 }
 .smk_accordion {
     list-style: outside none none;
-    margin: 0;
+    margin: 5% 0%;
     padding: 0;
     position: relative;
   }
@@ -522,12 +522,19 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
     color: #1c1c1c;
     border-radius: 25px;
     padding: 10px 25px 10px 25px;
+    font-size: 18px;
 }
 .btn-border-radius:hover{
     color: #ffffff;
     background-color: #2C3E50;
 }
 
+.subheadline-4 {
+    font-size: 18px !important;
+}
+.post-title h5 {
+    font-size: 18px !important;
+}
 
 @media only screen and (max-width: 992px) {
     #sticked-menu .logo{
@@ -540,10 +547,17 @@ nav.site-desktop-menu > ul > li > ul > li > a.active:hover{
         text-align: start;
         background: transparent;
     }
-    nav.site-mobile-menu > ul > li .btn-primary{
+    nav.site-mobile-menu > ul > li .btn-primary,
+    nav.site-mobile-menu > ul > li a,
+    nav.site-mobile-menu > ul > li .btn-primary:hover,
+    nav.site-mobile-menu > ul > li a:hover  {
         background-color: transparent !important;
-        color: #ffffff;
-        border: 0px ;
+        color: #fff;
+        border: 0px !important;
+        font-size: 14px !important;
+    }
+    .home-blog .card{
+        min-height: 450px !important;
     }
     .home-img{
         margin: 5% 0%;
