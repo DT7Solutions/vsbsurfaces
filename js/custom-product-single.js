@@ -14,10 +14,10 @@
         itemsTabletSmall : false,
         itemsMobile : [479, 1],
         navigation: true,
-        pagination: false,
-        navigationText: [
-          "<i class='fa fa-angle-left'></i>",
-          "<i class='fa fa-angle-right'></i>"
+        pagination:false,
+        navigationText:[
+          "<i class='fa fa-angle-left'</i>",
+          "<i class='fa fa-angle-right'</i>",
         ],
     });
 
@@ -30,10 +30,10 @@
       itemsTabletSmall : false,
       itemsMobile : [479, 1],
       navigation: true,
-      pagination: true,
+      pagination: false,
       navigationText: [
-        "<i class='fa fa-angle-left'</i>",
-        "<i class='fa fa-angle-right'</i>",
+        "<i class='fa fa-arrow-left'</i>",
+        "<i class='fa fa-arrow-right'</i>",
         
       ],
 });
@@ -48,10 +48,10 @@ $(".our-natural-stone-slider").owlCarousel({
   itemsTabletSmall:false,
   itemsMobile:[479,1],
   navigation:true,
-  pagination:true,
-  navigationText:[
-    "<i class='fa fa-angle-left'</i>",
-    "<i class='fa fa-angle-right'</i>",
+  pagination: false,
+  navigationText: [
+    "<i class='fa fa-arrow-left'></i>",
+    "<i class='fa fa-arrow-right'></i>"
   ],
 });
     
