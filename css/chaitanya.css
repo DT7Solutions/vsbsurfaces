@@ -551,6 +551,7 @@ footer .main-footer .widget-inner ul li a {
 } */
 
 .btn.width {
+    color: #000 !important;
     min-width: 170px;
     padding: 15px 30px;
     border-radius: 4px;
@@ -839,7 +840,7 @@ footer .main-footer .widget-inner ul li a {
         max-width: 375px;
     }
     .tab-content form {
-        margin: 0 -10% !important;
+        margin: 0% !important;
     }
     .nav-tabs-info{
         padding: 10px 20px;

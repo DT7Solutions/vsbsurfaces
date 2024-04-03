@@ -215,79 +215,79 @@
                                         <div class="tab-content">
                                             <div id="granite" class="container tab-pane active">
                                                 <div class="row">
-                                                    <div class="col-md-7">
-                                                    <form  name="contactform" method="post" class="wpcf7-form" style="margin-left: -34px;">
-                                                        <div class="col-md-6">
-                                                            <p><input type="text" id="first" placeholder="First Name"></p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <p> <input type="text" id="last" placeholder="Last Name"></p>
-                                                        </div>                                    
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="emailtwo"   name="email" placeholder="Email" maxlength="80" size="30"></p>
-                                                           
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="telephonetwo"   name="telephone" required  placeholder="Telephone" maxlength="30" size="30"></p>
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="subjecttwo"   name="subject" required placeholder="Subject" maxlength="50" size="30"></p>   
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><textarea  id="messagetwo" required="please fill the message" name="messagetwo" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
-                                                        </div>
-                                                        <!-- <div class="col-md-12">                                        
-                                                            <div class="form-group col mb-3-5">
-                                                                <div class="g-recaptcha" data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
+                                                    <div class="col-md-6">
+                                                        <form id='contactform' name="contactform" method="post" class="wpcf7-form needs-validation"
+                                                            novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <p><input type="text" id="firstname" required name="firstname" placeholder="First Name"></p>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p><input type="text" id="lastname" name="lastname" placeholder="Last Name"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="email" name="email" required placeholder="Email" maxlength="80" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="telephone" required name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="subject" name="subject" placeholder="Subject" maxlength="50" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><textarea id="message" name="message" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group col mb-3-5">
+                                                                        <div class="g-recaptcha" data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                                <div class="col-md-12 text-center">
+                                                                    <input type="button" onclick="Mail();" value="SEND" class="btn btn-primary width">
+                                                                    <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
+                                                                </div>
                                                             </div>
-                                                        </div> -->
-                                                        
-                                                        <div class="clearfix"></div>
-                                                        <div class="col-md-12 text-center">
-                                                            <input type="button" onclick="Send();" value="Send" class="btn btn-send btn-primary width">
-                                                            <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
-                                                        </div>
+                                                        </form>
                                                     </div>
-                                                </form>
                                                 </div>
                                             </div>
                                             <div id="quartz" class="container tab-pane">
                                                 <div class="row">
-                                                    <div class="col-md-7">
-                                                    <form  name="contactform" method="post" class="wpcf7-form" style="margin-left: -34px;">
-                                                        <div class="col-md-6">
-                                                            <p><input type="text" id="first" placeholder="First Name"></p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <p> <input type="text" id="last" placeholder="Last Name"></p>
-                                                        </div>                                    
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="emailtwo"   name="email" placeholder="Email" maxlength="80" size="30"></p>
-                                                           
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="telephonetwo"   name="telephone" required  placeholder="Telephone" maxlength="30" size="30"></p>
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><input  type="text" id="subjecttwo"   name="subject" required placeholder="Subject" maxlength="50" size="30"></p>   
-                                                        </div>
-                                                        <div class="col-md-12">                                        
-                                                            <p><textarea  id="messagetwo" required="please fill the message" name="messagetwo" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
-                                                        </div>
-                                                        <!-- <div class="col-md-12">                                        
-                                                            <div class="form-group col mb-3-5">
-                                                                <div class="g-recaptcha" data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
+                                                    <div class="col-md-6">
+                                                        <form name="contactform" method="post" class="wpcf7-form">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <p><input type="text" id="first" placeholder="First Name"></p>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p><input type="text" id="last" placeholder="Last Name"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="emailtwo" name="email" placeholder="Email" maxlength="80" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="telephonetwo" name="telephone" required placeholder="Telephone" maxlength="30" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><input type="text" id="subjecttwo" name="subject" required placeholder="Subject" maxlength="50" size="30"></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p><textarea id="messagetwo" required="please fill the message" name="messagetwo" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group col mb-3-5">
+                                                                        <div class="g-recaptcha" id="recaptcha" data-sitekey="6Ldt7rkkAAAAAJFo7Pxfxwt5B9o01L7NunALjM1I"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                                <div class="col-md-12 text-center">
+                                                                    <input type="button" onclick="Send();" value="SEND" class="btn btn-primary width">
+                                                                    <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
+                                                                </div>
                                                             </div>
-                                                        </div> -->
-                                                        
-                                                        <div class="clearfix"></div>
-                                                        <div class="col-md-12 text-center">
-                                                            <input type="button" onclick="Send();" value="Send" class="btn btn-send btn-primary width">
-                                                            <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
-                                                        </div>
+                                                        </form>
                                                     </div>
-                                                </form>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -545,118 +545,132 @@
     </div>
     
     <a id="to-the-top" ><i class="fa fa-angle-up"></i></a>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        
-        
-        function Mail(){
-            if (document.getElementById("firstname").value == "") {
-            alert("Please enter your first name");
-            document.getElementById("firstname").focus();
-            return false;
-        }
-        if (document.getElementById("lastname").value == "") {
-            alert("Please enter your last name");
-            document.getElementById("lastname").focus();
-            return false;
-        }
-        if (document.getElementById("email").value == "") {
-            alert("Please enter your email address");
-            document.getElementById("email").focus();
-            return false;
-        }
-        if (document.getElementById("telephone").value == "") {
-            alert("Please enter your telephone number");
-            document.getElementById("telephone").focus();
-            return false;
-        }
-        if (document.getElementById("message").value == "") {
-            alert("Please enter your message");
-            document.getElementById("message").focus();
-            return false;
-        }
-        let name = document.getElementById("firstname").value;
-        let email = document.getElementById("email").value;
-        let Contact = document.getElementById("telephone").value;
-        let subject = document.getElementById("subject").value;
-        let message = document.getElementById("message").value;
-          Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "vsbsurfaces.website@gmail.com",
-        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
-        To : 'manideep723@gmail.com',
-        From : "vsbsurfaces.website@gmail.com",
-        Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
-        + message
-     
-			
-    }).then(
-      message => {
-        alert("Your message has been sent successfully");
-        document.getElementById("contactform").reset();
-      }
-    );
-  }
-      </script> 
 
-      form 2
-      <script>
-        
-        
-        function Send(){
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("45s2CZnZLG-S1NXJ6");
+        })();
+    </script>
+
+    <script>
+        function Mail() {
+
+
+            if (document.getElementById("firstname").value == "") {
+                alert("Please enter your first name");
+                document.getElementById("firstname").focus();
+                return false;
+            }
+
+            if (document.getElementById("lastname").value == "") {
+                alert("Please enter your last name");
+                document.getElementById("lastname").focus();
+                return false;
+            }
+            if (document.getElementById("email").value == "") {
+                alert("Please enter your email address");
+                document.getElementById("email").focus();
+                return false;
+            }
+            if (document.getElementById("telephone").value == "") {
+                alert("Please enter your telephone number");
+                document.getElementById("telephone").focus();
+                return false;
+            }
+            if (document.getElementById("message").value == "") {
+                alert("Please enter your message");
+                document.getElementById("message").focus();
+                return false;
+            }
+
+            var params = {
+                name: document.getElementById("firstname").value,
+                lastname: document.getElementById("lastname").value,
+                email: document.getElementById("email").value,
+                phonenumber: document.getElementById("telephone").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value,
+
+            };
+            const serviceID = "service_3mpm8ov";
+            const templateID = "template_y9di1bu";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("firstname").value = "";
+                    document.getElementById("lastname").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("telephone").value = "";
+                    document.getElementById("subject").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!")
+                    console.log(JSON.stringify(params, null, 2));
+
+                })
+                .catch(err => console.log(err));
+
+        }
+    </script>
+
+    form 2
+    <script>
+        function Send() {
             if (document.getElementById("first").value == "") {
-            alert("Please enter your first name");
-            document.getElementById("first").focus();
-            return false;
+                alert("Please enter your first name");
+                document.getElementById("first").focus();
+                return false;
+            }
+            if (document.getElementById("last").value == "") {
+                alert("Please enter your last name");
+                document.getElementById("last").focus();
+                return false;
+            }
+            if (document.getElementById("emailtwo").value == "") {
+                alert("Please enter your email address");
+                document.getElementById("emailtwo").focus();
+                return false;
+            }
+            if (document.getElementById("telephonetwo").value == "") {
+                alert("Please enter your telephone number");
+                document.getElementById("telephonetwo").focus();
+                return false;
+            }
+            if (document.getElementById("messagetwo").value == "") {
+                alert("Please enter your message");
+                document.getElementById("messagetwo").focus();
+                return false;
+            }
+
+            var params = {
+                name: document.getElementById("first").value,
+                lastname: document.getElementById("last").value,
+                email: document.getElementById("emailtwo").value,
+                phonenumber: document.getElementById("telephonetwo").value,
+                subject: document.getElementById("subjecttwo").value,
+                message: document.getElementById("messagetwo").value,
+
+            };
+            const serviceID = "service_3mpm8ov";
+            const templateID = "template_0a97luk";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("first").value = "";
+                    document.getElementById("last").value = "";
+                    document.getElementById("emailtwo").value = "";
+                    document.getElementById("telephonetwo").value = "";
+                    document.getElementById("subjecttwo").value = "";
+                    document.getElementById("messagetwo").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!")
+                    console.log(JSON.stringify(params, null, 2));
+                })
+                .catch(err => console.log(err));
         }
-        if (document.getElementById("last").value == "") {
-            alert("Please enter your last name");
-            document.getElementById("last").focus();
-            return false;
-        }
-        if (document.getElementById("emailtwo").value == "") {
-            alert("Please enter your email address");
-            document.getElementById("emailtwo").focus();
-            return false;
-        }
-        if (document.getElementById("telephonetwo").value == "") {
-            alert("Please enter your telephone number");
-            document.getElementById("telephonetwo").focus();
-            return false;
-        }
-        if (document.getElementById("messagetwo").value == "") {
-            alert("Please enter your message");
-            document.getElementById("messagetwo").focus();
-            return false;
-        }
-        let name = document.getElementById("first").value;
-        let email = document.getElementById("emailtwo").value;
-        let Contact = document.getElementById("telephonetwo").value;
-        let subject = document.getElementById("subjecttwo").value;
-        let message = document.getElementById("messagetwo").value;
-          Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "vsbsurfaces.website@gmail.com",
-        Password :"9DA44F3FCA1BB8DA0A9EF41A19EE8FCC1D90",
-        To : 'manideepmadhuri456@gmail.com',
-        From : "vsbsurfaces.website@gmail.com",
-        Subject : "This is the subject",
-        Body : "Name:" + name + "<br/> Email:" +  email + "<br/> Subject:" + subject + "<br/> Message:"
-        + message
-     
-			
-    }).then(
-      message => alert("Your message has been sending sucessfully"),
-      document.getElementById("first").value = "",
-      document.getElementById("last").value = "",
-      document.getElementById("emailtwo").value = "",
-      document.getElementById("telephonetwo").value = "",
-      document.getElementById("subjecttwo").value = "",
-      document.getElementById("messagetwo").value = "",
-    );
-        }
-      </script> 
+    </script>
 
     <!-- LOAD JS FILES -->
     <script src="js/jquery.min.js"></script>
